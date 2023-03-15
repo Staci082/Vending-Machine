@@ -1,15 +1,79 @@
 body {
   display: flex;
   height: 98vh;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(0deg, rgb(236, 191, 236) 50%, rgb(245, 214, 164) 50%);
   background-size: 100%;
 }
 
+#leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  margin-left: 3vw;
+}
+
 #textContainer {
   width: 40vw;
-  height: auto;
+  height: 60vh;
+}
+
+#btnContainer {
+  width: 30vw;
+  margin-left: 8vw;
+  margin-bottom: 5vh;
+}
+
+button {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
 #menuContainer {
@@ -22,6 +86,8 @@ body {
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   margin-top: 5vh;
+  margin-right: 4vw;
+  margin-left: 4vw;
   padding: 20px 0px 20px 0px;
 }
 
