@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+}
+
+#textContainer {
+  width: 40vw;
+  height: auto;
+}
+
+#menuContainer {
+  height: 80vh;
+  width: 15vw;
+  border: red solid 2px;
+  margin-top: 5vh;
+}
+#machine {
+  height: 90vh;
+  width: auto;
+  margin-top: 5vh;
+}
