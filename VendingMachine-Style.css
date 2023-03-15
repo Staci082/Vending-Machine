@@ -1,4 +1,7 @@
 body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   display: flex;
   height: 98vh;
   justify-content: space-evenly;
@@ -41,6 +44,8 @@ button {
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  font-size: 3rem;
   height: 80px;
   width: 80px;
   justify-content: center;
@@ -59,7 +64,7 @@ button {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 18px;
+  margin: 4px 2px 4px 2px;
 }
 
 button:focus {
@@ -83,7 +88,7 @@ button:active {
   height: 80vh;
   width: 11vw;
   background: rgba(167, 239, 244, 0.876);
-  border-radius: 5%;
+  border-radius: 3%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   margin-top: 5vh;
   margin-right: 4vw;
