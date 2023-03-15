@@ -1,46 +1,63 @@
-
-
 body {
-    user-select: none;
-      display: flex;
+  user-select: none;
+  display: flex;
   height: 98vh;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(0deg, rgb(236, 191, 236) 50%, rgb(245, 214, 164) 50%);
+  background: linear-gradient(
+    0deg,
+    rgb(236, 191, 236) 50%,
+    rgb(245, 214, 164) 50%
+  );
   background-size: 100%;
 }
 
 #leftContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 50vw;
-    margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 50vw;
+  margin-left: 3vw;
+}
+#bubble {
+  display: flex;
+  background-image: url("./images/bubble.png");
+  background-size: cover;
+  width: 40vw;
+  height: 70vh;
+  margin-top: -2vh;
 }
 #textContainer {
-  width: 40vw;
-  height: 60vh;
+  height: 48vh;
+  width: 30vw;
+  margin-left: 5vw;
+  margin-top: 2vw;
+}
+
+h2 {
+  z-index: 1;
 }
 
 #btnContainer {
   width: 30vw;
- margin-left: 8vw;
-margin-bottom: 5vh;
+  height: auto;
+  margin-left: 8vw;
 }
 
 button {
   align-items: center;
   appearance: none;
-  background-color: #FCFCFD;
+  background-color: #fcfcfd;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395A;
+  color: #36395a;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: bold;
   font-size: 3rem;
   height: 80px;
@@ -54,26 +71,28 @@ button {
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   margin: 4px 2px 4px 2px;
 }
 
 button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
 button:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
+  box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
 #menuContainer {
@@ -83,17 +102,18 @@ button:active {
   height: 80vh;
   width: 11vw;
   background: rgba(167, 239, 244, 0.876);
-  border-radius: 3%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   margin-top: 5vh;
   margin-right: 4vw;
   margin-left: 4vw;
   padding: 20px 0px 20px 0px;
 }
 .item {
-    height: 12vh;
-    width: auto;
-  }
+  height: 12vh;
+  width: auto;
+}
 
 #machine {
   height: 90vh;
