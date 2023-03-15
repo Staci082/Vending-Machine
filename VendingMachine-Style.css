@@ -1,8 +1,10 @@
 body {
   display: flex;
+  height: 98vh;
   justify-content: space-around;
   align-items: center;
-  background: black;
+  background: linear-gradient(0deg, rgb(236, 191, 236) 50%, rgb(245, 214, 164) 50%);
+  background-size: 100%;
 }
 
 #textContainer {
@@ -11,13 +13,25 @@ body {
 }
 
 #menuContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
   height: 80vh;
-  width: 15vw;
-  border: red solid 2px;
+  width: 11vw;
+  background: rgba(167, 239, 244, 0.876);
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   margin-top: 5vh;
+  padding: 20px 0px 20px 0px;
 }
+
+.item {
+  height: 12vh;
+  width: auto;
+}
+
 #machine {
   height: 90vh;
   width: auto;
   margin-top: 5vh;
-}
+}/*# sourceMappingURL=VendingMachine-Style.css.map */
