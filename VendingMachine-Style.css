@@ -121,10 +121,9 @@ button:active {
   background: rgba(167, 239, 244, 0.876);
   border-radius: 4px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  margin-top: 5vh;
   margin-right: 3vw;
   margin-left: 4vw;
-  padding: 20px 0px 20px 0px;
+  padding: 50px 0px 20px 0px;
 }
 
 #scroll-up,
@@ -132,14 +131,22 @@ button:active {
   position: absolute;
   height: 8vh;
   width: 8vh;
-  margin-right: 2vw;
-  margin-left: 2.3vw;
-  border: red 2px solid;
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
+  opacity: 50%;
   z-index: 2;
 }
 
+#scroll-up {
+  background-image: url("./images/up.png");
+  background-size: 8vh;
+  margin-top: -7vh;
+}
+
 #scroll-down {
-  margin-top: 72vh;
+  margin-top: 75vh;
+  background-image: url("./images/down.png");
+  background-size: 8vh;
 }
 
 .item {
