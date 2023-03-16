@@ -56,12 +56,13 @@ body {
 }
 
 #btnContainer {
-  width: 30vw;
+  width: 35vw;
   height: auto;
-  margin-left: 8vw;
+  margin-left: 4vw;
+  margin-bottom: 1vw;
 }
 
-button {
+input {
   align-items: center;
   justify-content: center;
   -webkit-appearance: none;
@@ -98,16 +99,16 @@ button {
   margin: 4px 2px 4px 2px;
 }
 
-button:focus {
+input:focus {
   box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
-button:hover {
+input:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-button:active {
+input:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
@@ -168,6 +169,6 @@ button:active {
 #machine {
   height: 90vh;
   width: auto;
-  margin-top: 5vh;
+  margin-top: 1vh;
   margin-right: 2vw;
 }/*# sourceMappingURL=VendingMachine-Style.css.map */

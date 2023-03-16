@@ -30,7 +30,3 @@ function scrollDown()
 {
    menuCont.scrollBy(0,-20);
 }
-
-
-
-  
