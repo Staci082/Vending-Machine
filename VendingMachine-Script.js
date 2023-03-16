@@ -1,7 +1,6 @@
 // variables
 
 
-
  /*
 document.getElementById('A').value 
 document.getElementById('B').value 

@@ -123,35 +123,46 @@ button:active {
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   margin-right: 3vw;
   margin-left: 4vw;
-  padding: 50px 0px 20px 0px;
+  padding: 70px 0px 40px 0px;
 }
 
 #scroll-up,
 #scroll-down {
   position: absolute;
+  cursor: pointer;
   height: 8vh;
   width: 8vh;
   margin-right: 2.5vw;
   margin-left: 2.5vw;
-  opacity: 50%;
+  background-size: 8vh;
+  opacity: 30%;
   z-index: 2;
 }
 
 #scroll-up {
   background-image: url("./images/up.png");
-  background-size: 8vh;
-  margin-top: -7vh;
+  margin-top: -9vh;
+}
+#scroll-up:hover {
+  transform: translateY(-2px);
+  transform: scale(150%);
 }
 
 #scroll-down {
-  margin-top: 75vh;
+  margin-top: 77vh;
   background-image: url("./images/down.png");
-  background-size: 8vh;
+}
+#scroll-down:hover {
+  transform: translateY(2px);
+  transform: scale(150%);
 }
 
 .item {
   height: 12vh;
   width: auto;
+}
+.item:hover {
+  transform: scale(150%);
 }
 
 #machine {
