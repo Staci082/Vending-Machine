@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="VendingMachine-Style.css"></link>
 </head>
 <body>
@@ -14,6 +14,7 @@
             <div id="textContainer">
 
             <div id="makeChoice" class="text" >Make your choice.</div>
+            <input type="text" id="textInput"></input>
             <div id="itemDescription" class="text">lime soda:&nbsp; $&nbsp;1.5&nbsp;&nbsp; B 1 </div>
 
             </div>
@@ -22,7 +23,7 @@
 
         <form id="btnContainer">
             <div>
-                <input type="button" class="btn" id="A" value="A"></button>
+                <input type="button" class="btn" id="A" value="A"></input>
                 <input type="button" class="btn" id="B" value="B"></input>
                 <input type="button" class="btn" id="C" value="C"></input>
                 <input type="button" class="btn" id="D" value="D"></input>
@@ -62,7 +63,7 @@
                 <li>
                     <img class="item" src="./images/jungle.png"></img>
                 </li>
-  
+  <!---
                 <li>
                     <img class="item" src="./images/coco.png"></img>
                 </li>
@@ -104,15 +105,15 @@
                 <li>
                     <img class="item" src="./images/pinkchips.png"></img>
                 </li>
-             
             </ul>
+             --->
 
         <div id="scroll-down" onClick="scrollDown()"></div>
 
         </div>
 
         <image id="machine" src="./images/machine.png"></image>      
-   
+     
 <script src="VendingMachine-Script.js"></script>
 </body>
 </html>

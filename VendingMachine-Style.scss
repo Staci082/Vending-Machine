@@ -13,14 +13,14 @@
   opacity: 30%;
   z-index: 2;
   &:hover {
-    opacity: 10%;
+  opacity: 10%;
   }
 }
 
 @mixin flex {
-  position: relative;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
 }
 @mixin items {
     height: 12vh;
@@ -28,6 +28,12 @@
     &:hover {
         transform: scale(150%);
     }
+}
+@mixin font {
+  font-family: "digital-7";
+  font-size: 7vh;
+  font-weight: bold;
+  color: rgb(93, 89, 89);
 }
 body {
   user-select: none;
@@ -55,33 +61,31 @@ body {
   width: 40vw;
 }
 #bubble {
-
   width: 40vw;
   height: 60vh;
-
 }
 
 #textContainer {
+  @include flex;
   position: absolute;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 40vh;
   width: 34vw;
   top: 12vh;
   left: 7vw;
-  z-index: 10;
 }
-
+#textInput {
+  @include font;
+  user-select: none;
+  height: 10vh;
+  width: 10vw;
+  border: none;
+  text-align: center;
+  outline: none;
+}
 .text {
-  font-family: "digital-7";
-  font-size: 7vh;
-  font-weight: bold;
-  color: rgb(93, 89, 89);
-  z-index: 1;
+  @include font;
   margin: 30px 0px 30px 0px;
-
 }
 #makeChoice:after {
   content: '..';
@@ -100,9 +104,7 @@ body {
 }
 
 #btnContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@include flex;
   align-items: center;
   width: 35vw;
   height: 20vh;
@@ -113,7 +115,7 @@ body {
 #delete {
   background: rgb(244, 126, 126);
 }
-input {
+.btn {
   align-items: center;
   justify-content: center;
   appearance: none;
@@ -129,11 +131,9 @@ input {
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
   font-size: 3rem;
-  height: 80px;
-  width: 80px;
+  height: 10vh;
+  width: 5vw;
   line-height: 1;
-  list-style: none;
-  overflow: hidden;
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
@@ -148,18 +148,18 @@ input {
   margin: 4px 2px 4px 2px;
 }
 
-input:focus {
+.btn:focus {
   box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
-input:hover {
+.btn:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-input:active {
+.btn:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
@@ -176,12 +176,9 @@ input:active {
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 #itemContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@include flex;
   height: 65vh;
   width: 15vw;
-  overflow-x: none;
 }
 
 #scroll-up {

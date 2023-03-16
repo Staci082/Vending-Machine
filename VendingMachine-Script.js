@@ -30,3 +30,7 @@ function scrollDown()
 {
    menuCont.scrollBy(0,-20);
 }
+
+$('#delete').click(function() {
+   location.reload(true);
+});
