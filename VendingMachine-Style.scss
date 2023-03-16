@@ -12,8 +12,11 @@
   background-size: 8vh;
   opacity: 30%;
   z-index: 2;
-
+  &:hover {
+    opacity: 10%;
+  }
 }
+
 @mixin flex {
   display: flex;
   justify-content: space-around;
@@ -156,7 +159,6 @@ input:active {
   margin-top: -9vh;
   &:hover {
     transform: translateY(-2px);
-    transform: scale(150%);
   }
 }
 #scroll-down {
@@ -164,7 +166,6 @@ input:active {
   background-image: url("./images/down.png");
   &:hover {
     transform: translateY(2px);
-    transform: scale(150%);
   }
 }
 .item {

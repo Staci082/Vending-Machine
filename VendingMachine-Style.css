@@ -139,6 +139,10 @@ input:active {
   opacity: 30%;
   z-index: 2;
 }
+#scroll-up:hover,
+#scroll-down:hover {
+  opacity: 10%;
+}
 
 #scroll-up {
   background-image: url("./images/up.png");
@@ -146,7 +150,6 @@ input:active {
 }
 #scroll-up:hover {
   transform: translateY(-2px);
-  transform: scale(150%);
 }
 
 #scroll-down {
@@ -155,7 +158,6 @@ input:active {
 }
 #scroll-down:hover {
   transform: translateY(2px);
-  transform: scale(150%);
 }
 
 .item {
