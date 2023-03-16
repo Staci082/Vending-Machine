@@ -12,27 +12,31 @@
         <div id="bubble">
             <div id="textContainer">
 
+            <div id="itemDescription" class="text">lime soda</div>
             <div id="makeChoice" class="text" >Make your choice..</div>
-            <div id="choiceOutput" class="text"> </div>
+            <div id="choiceOutput" class="text">test</div>
 
             </div>
 
         </div>
 
         <form id="btnContainer">
-                <input type="button" class="btn" id="A" value="A" "></button>
-                <input type="button" class="btn" id="B" value="B" onclick="getChoice(this.value)"></input>
-                <input type="button" class="btn" id="C" value="C" onclick="getChoice(this.value)"></input>
-                <input type="button" class="btn" id="D" value="D" onclick="getChoice(this.value)"></input>
-                <input type="button" class="btn" id="E" value="E" onclick="getChoice(this.value)"></input>
+            <div class="btnRow">
+                <input type="button" class="btn" id="A" value="A"></button>
+                <input type="button" class="btn" id="B" value="B"></input>
+                <input type="button" class="btn" id="C" value="C"></input>
+                <input type="button" class="btn" id="D" value="D"></input>
+                <input type="button" class="btn" id="E" value="E"></input>
                 <input type="button" class="btn" id="check" value="&check;"></input>
-                <input type="button" class="btn" id="1" value="1" onclick="getChoice(this.value)"></input>
-                <input type="button" class="btn" id="2" value="2" onclick="getChoice(this.value)"></input>
-                <input type="button" class="btn" id="3" value="3" onclick="getChoice(this.value)"></input>
-                <input type="button" class="btn" id="4" value="4" onclick="getChoice(this.value)"></input>
-                <input type="button" class="btn" id="5" value="5" onclick="getChoice(this.value)"></input>
+            </div>
+            <div class="btnRow">
+                <input type="button" class="btn" id="1" value="1"></input>
+                <input type="button" class="btn" id="2" value="2"></input>
+                <input type="button" class="btn" id="3" value="3"></input>
+                <input type="button" class="btn" id="4" value="4"></input>
+                <input type="button" class="btn" id="5" value="5"></input>
                 <input type="button" class="btn" id="delete" value="&#10005;"></input>
-            
+            </div>
             
             </form>
 
@@ -41,25 +45,67 @@
         <div id="menuContainer">
             <div id="scroll-up" onClick="scrollUp()"></div>
 
-            <img class="item" src="./images/lime.png"></img>
-            <img class="item" src="./images/pineapple.png"></img>
-            <img class="item" src="./images/cola.png"></img>
-            <img class="item" src="./images/energy.png"></img>
-            <img class="item" src="./images/jungle.png"></img>
-     <!--   <img class="item" src="./images/coco.png"></img>
-            <div class="item" src="./images/mystery.png"></div>
-            <div class="item" src="/images/redbar.png"></div>
-            <div class="item" src="/images/yellowbar.png"></div>
-            <div class="item" src="/images/pinkbar.png"></div>
-            <div class="item" src="/images/orange.png"></div>
-            <div class="item" src="/images/lemon.png"></div>
-            <div class="item" src="/images/tropical.png"></div>
-            <div class="item" src="/images/brownbar.png"></div>
-            <div class="item" src="/images/redchips.png"></div>
-            <div class="item" src="/images/yellowchips.png"></div>
-            <div class="item" src="/images/greenchips.png"></div>
-            <div class="item" src="/images/pinkchips.png"></div>
-        -->
+            <ul id="itemContainer" style="list-style: none">  
+           
+                <li>
+                    <img class="item" src="./images/lime.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/pineapple.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/cola.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/energy.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/jungle.png"></img>
+                </li>
+    <!--
+                <li>
+                    <img class="item" src="./images/coco.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/mystery.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/orange.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/lemon.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/tropical.png"></img>
+                </li>
+    
+                <li>
+                    <img class="item" src="./images/redbar.png"></img
+                </li>
+                <li>
+                    <img class="item" src="./images/yellowbar.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/pinkbar.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/brownbar.png"></img>
+                </li>
+    
+                <li>
+                    <img class="item" src="./images/redchips.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/yellowchips.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/greenchips.png"></img>
+                </li>
+                <li>
+                    <img class="item" src="./images/pinkchips.png"></img>
+                </li>
+                -->
+            </ul>
 
         <div id="scroll-down" onClick="scrollDown()"></div>
 
