@@ -25,7 +25,6 @@
 @mixin items {
     height: 12vh;
     width: auto;
-
     &:hover {
         transform: scale(150%);
     }
@@ -54,8 +53,6 @@ body {
   align-items: center;
   height: 95vh;
   width: 40vw;
-  border: blue 4px solid;
-
 }
 #bubble {
   background-image: url("./images/bubble.png");
@@ -64,7 +61,7 @@ body {
   height: 60vh;
 }
 #textContainer {
-  @include flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -72,7 +69,6 @@ body {
   width: 25vw;
   margin-left: 5vw;
   margin-top: 2vw;
-  border: solid green 4px
 }
 
 .text {
@@ -81,7 +77,8 @@ body {
   font-weight: bold;
   color: rgb(93, 89, 89);
   z-index: 1;
-  position: absolute;
+  margin: 30px 0px 30px 0px;
+
 }
 
 
@@ -93,8 +90,11 @@ body {
   width: 35vw;
   height: 20vh;
 }
-.btnRow {
-  display: flex;
+#check {
+  background: rgb(143, 231, 143);
+}
+#delete {
+  background: rgb(244, 126, 126);
 }
 input {
   align-items: center;
@@ -151,6 +151,7 @@ input:active {
   display: grid;
   grid-column: 3/4;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   justify-content: center;
   height: 80vh;
   width: 10vw;
@@ -158,8 +159,14 @@ input:active {
   border-radius: 4px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-    border: solid 4px orange;
-
+}
+#itemContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: white 4px solid;
 }
 #scroll-up,
 #scroll-down {
@@ -167,13 +174,12 @@ input:active {
 }
 #scroll-up {
   background-image: url("./images/up.png");
-  margin-top: -9vh;
   &:hover {
     transform: translateY(-2px);
   }
 }
 #scroll-down {
-  margin-top: 77vh;
+  margin-top: 72vh;
   background-image: url("./images/down.png");
   &:hover {
     transform: translateY(2px);
@@ -190,5 +196,4 @@ input:active {
   width: auto;
   margin-top: 1vh;
   margin-right: 2vw;
-  border: 4px solid red;
 }
