@@ -12,36 +12,38 @@
         <div id="bubble">
             <div id="textContainer">
 
-            <h2>Make your choice</h2>
-            <h2></h2>
+            <div id="makeChoice" class="text" >Make your choice..</div>
+            <div id="choiceOutput" class="text"> </div>
 
             </div>
 
         </div>
 
-        <div id="btnContainer">
-                <button value="A">A</button>
-                <button value="B">B</button>
-                <button value="C">C</button>
-                <button value="D">D</button>
-                <button value="E">E</button>
-                <button value="1">1</button>
-                <button value="2">2</button>
-                <button value="3">3</button>
-                <button value="4">4</button>
-                <button value="5">5</button>
-        </div>
+        <form id="btnContainer">
+                <button type="button" class="btn" id="A" value="A" onclick="getChoice()">A</button>
+                <button type="button" class="btn" id="B" value="B" onclick="getChoice(this.value)">B</button>
+                <button type="button" class="btn" id="C" value="C" onclick="getChoice(this.value)">C</button>
+                <button type="button" class="btn" id="D" value="D" onclick="getChoice(this.value)">D</button>
+                <button type="button" class="btn" id="E" value="E" onclick="getChoice(this.value)">E</button>
+                <button type="button" class="btn" id="1" value="1" onclick="getChoice(this.value)">1</button>
+                <button type="button" class="btn" id="2" value="2" onclick="getChoice(this.value)">2</button>
+                <button type="button" class="btn" id="3" value="3" onclick="getChoice(this.value)">3</button>
+                <button type="button" class="btn" id="4" value="4" onclick="getChoice(this.value)">4</button>
+                <button type="button" class="btn" id="5" value="5" onclick="getChoice(this.value)">5</button>
+        </form>
 
     </div>
 
         <div id="menuContainer">
-         <img class="item" src="./images/lime.png"></img>
+            <div id="scroll-up" onClick="scrollUp()"></div>
+
+            <img class="item" src="./images/lime.png"></img>
             <img class="item" src="./images/pineapple.png"></img>
             <img class="item" src="./images/cola.png"></img>
-           <img class="item" src="./images/energy.png"></img>
+            <img class="item" src="./images/energy.png"></img>
             <img class="item" src="./images/jungle.png"></img>
-           <!---  <img class="item" src="./images/coco.png"></img>
-        <!--- <div class="item" src="./images/mystery.png"></div>
+     <!--   <img class="item" src="./images/coco.png"></img>
+            <div class="item" src="./images/mystery.png"></div>
             <div class="item" src="/images/redbar.png"></div>
             <div class="item" src="/images/yellowbar.png"></div>
             <div class="item" src="/images/pinkbar.png"></div>
@@ -54,6 +56,9 @@
             <div class="item" src="/images/greenchips.png"></div>
             <div class="item" src="/images/pinkchips.png"></div>
         -->
+
+        <div id="scroll-down" onClick="scrollDown()"></div>
+
         </div>
 
         <image id="machine" src="./images/machine.png"></image>      

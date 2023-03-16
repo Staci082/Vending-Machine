@@ -1,9 +1,26 @@
+@font-face {
+  font-family: "digital-7";
+  src: url(./font/digital-7.ttf);
+}
+@mixin scrollBtn {
+  position: absolute;
+  height: 8vh;
+  width: 8vh;
+  margin-right: 2vw;
+  margin-left: 2.3vw;
+  border: red 2px solid;
+  z-index: 2;
+}
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 body {
   user-select: none;
-  display: flex;
-  height: 98vh;
-  justify-content: space-evenly;
+  @include flex;
   align-items: center;
+  height: 98vh;
   background: linear-gradient(
     0deg,
     rgb(236, 191, 236) 50%,
@@ -13,15 +30,13 @@ body {
 }
 
 #leftContainer {
-  display: flex;
+    @include flex;
   flex-direction: column;
-  justify-content: space-evenly;
   height: 100vh;
   width: 50vw;
   margin-left: 3vw;
 }
 #bubble {
-  display: flex;
   background-image: url("./images/bubble.png");
   background-size: cover;
   width: 40vw;
@@ -29,14 +44,25 @@ body {
   margin-top: -2vh;
 }
 #textContainer {
+    @include flex;
+  flex-direction: column;
+  align-items: center;
   height: 48vh;
   width: 30vw;
   margin-left: 5vw;
   margin-top: 2vw;
 }
 
-h2 {
+.text {
+  font-family: "digital-7";
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(93, 89, 89);
   z-index: 1;
+  position: absolute;
+}
+#choiceOutput {
+  margin-top: 30vh;
 }
 
 #btnContainer {
@@ -47,6 +73,7 @@ h2 {
 
 button {
   align-items: center;
+  justify-content: center;
   appearance: none;
   background-color: #fcfcfd;
   border-radius: 4px;
@@ -62,7 +89,6 @@ button {
   font-size: 3rem;
   height: 80px;
   width: 80px;
-  justify-content: center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
@@ -103,12 +129,19 @@ button:active {
   width: 11vw;
   background: rgba(167, 239, 244, 0.876);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   margin-top: 5vh;
-  margin-right: 4vw;
+  margin-right: 3vw;
   margin-left: 4vw;
   padding: 20px 0px 20px 0px;
+}
+#scroll-up,
+#scroll-down {
+  @include scrollBtn;
+}
+#scroll-down {
+  margin-top: 72vh;
 }
 .item {
   height: 12vh;
@@ -119,4 +152,5 @@ button:active {
   height: 90vh;
   width: auto;
   margin-top: 5vh;
+  margin-right: 2vw;
 }

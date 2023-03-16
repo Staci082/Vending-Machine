@@ -1,22 +1,37 @@
-/* images = {
-    "1" : "lime.png",
-    "2" : "pineapple.png",
-    "3" : "cola.png",
-    "4" : "energy.png",
-    "5" : "jungle.png",
-    "6" : "coco.png",
-    "7" : "mystery.png",
-    "8" : "redbar.png",
-    "9" : "yellowbar.png",
-    "10" : "pinkbar.png",
-    "11" : "orange.png",
-    "12" : "lemon.png",
-    "13" : "tropical.png",
-    "14" : "brownbar.png",
-    "15" : "redchips.png",
-    "16" : "yellowchips.png",
-    "17" : "greenchips.png",
-    "18" : "pinkchips.png",
- }
+// variables
+
+
+
+ /*
+document.getElementById('A').value 
+document.getElementById('B').value 
+document.getElementById('C').value 
+document.getElementById('D').value 
+document.getElementById('E').value 
+document.getElementById('1').value 
+document.getElementById('2').value 
+document.getElementById('3').value
+document.getElementById('4').value 
+document.getElementById('5').value 
 */
 
+// event listeners
+
+// btn.addEventListener("click", getChoice, true);
+
+
+// functions
+
+function scrollUp()
+{
+   menuCont.scrollBy(0,20);
+}
+
+function scrollDown()
+{
+   menuCont.scrollBy(0,-20);
+}
+
+
+
+  
