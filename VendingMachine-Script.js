@@ -1,12 +1,4 @@
-// variables
 
-
-
-// event listeners
-
-
-
-// functions
 
 
 // gets buttons to output their value to textbox

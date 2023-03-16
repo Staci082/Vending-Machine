@@ -165,10 +165,8 @@ body {
   justify-content: center;
   height: 65vh;
   width: 15vw;
-  white-space: nowrap;
   overflow-y: auto;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 #scroll-up {
