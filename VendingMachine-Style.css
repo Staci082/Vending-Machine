@@ -148,6 +148,7 @@ body {
 }
 
 #menuContainer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,6 +165,10 @@ body {
   justify-content: center;
   height: 65vh;
   width: 15vw;
+  white-space: nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 #scroll-up {
@@ -175,7 +180,6 @@ body {
   margin-left: 2.5vw;
   background-size: 8vh;
   opacity: 30%;
-  z-index: 2;
   margin-bottom: 74vh;
   background-image: url("./images/up.png");
 }
@@ -195,7 +199,6 @@ body {
   margin-left: 2.5vw;
   background-size: 8vh;
   opacity: 30%;
-  z-index: 2;
   margin-top: 73vh;
   background-image: url("./images/down.png");
 }
