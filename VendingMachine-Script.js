@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
    
    buttons.forEach(function(btn) {
      btn.addEventListener("click", function(e) {
-       textbox.value += this.value;
+       textbox.value += this.value + " ";
      });
    });
  });
+
+
 
 function scrollUp()
 {
