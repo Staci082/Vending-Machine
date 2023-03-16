@@ -21,6 +21,17 @@ document.getElementById('5').value
 
 // functions
 
+document.addEventListener('DOMContentLoaded', function() {
+   let textbox = document.querySelector("#textInput");
+   let buttons = document.querySelectorAll(".btn");
+   
+   buttons.forEach(function(btn) {
+     btn.addEventListener("click", function(e) {
+       textbox.value += this.value;
+     });
+   });
+ });
+
 function scrollUp()
 {
    menuCont.scrollBy(0,20);
