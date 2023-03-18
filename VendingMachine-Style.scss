@@ -87,6 +87,9 @@ body {
   @include font;
   margin: 30px 0px 30px 0px;
 }
+#makeChoice {
+  padding-bottom: 4vh;
+}
 #makeChoice:after {
   content: '..';
   display: inline-block;
@@ -180,8 +183,6 @@ body {
 @include flex;
   height: 65vh;
   width: 15vw;
-	overflow-y: auto;
-	overflow-x: hidden;
 }
 
 #scroll-up {
