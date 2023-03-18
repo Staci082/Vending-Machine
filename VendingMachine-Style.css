@@ -50,9 +50,16 @@ body {
   content: "..";
   display: inline-block;
   animation: blink 1s infinite;
-  font-weight: bold;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #descriptionContainer {
   text-align: center;
   position: absolute;
@@ -71,7 +78,7 @@ body {
      -moz-user-select: none;
           user-select: none;
   height: 5vh;
-  width: 4.5vw;
+  width: 5vw;
   border: none;
   text-align: center;
   outline: none;
@@ -90,14 +97,6 @@ body {
   font-size: 6vh;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 #btnContainer {
   display: flex;
   flex-direction: column;

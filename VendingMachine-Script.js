@@ -1,7 +1,7 @@
 
 
 
-// gets buttons to output their value to textbox
+// gets buttons to output their value to text container
 
 document.addEventListener('DOMContentLoaded', function() {
    let textbox = document.querySelector("#textInput");
