@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
    });
  });
 
+ function getValue() {
+   let input = document.getElementsByTagName("input")[0];
+   alert(input.value);
+ }
 
 
 function scrollUp()
