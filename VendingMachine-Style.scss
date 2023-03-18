@@ -23,7 +23,7 @@
   justify-content: center;
 }
 @mixin items {
-    height: 12vh;
+    height: 14vh;
     width: auto;
     &:hover {
         transform: scale(150%);
@@ -173,7 +173,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  width: 8vw;
+  width: 8.5vw;
   background: rgba(167, 239, 244, 0.876);
   border-radius: 20px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
@@ -181,8 +181,8 @@ body {
 }
 #itemContainer {
 @include flex;
-  height: 65vh;
-  width: 15vw;
+  height: 80vh;
+  width: 9vw;
 }
 
 #scroll-up {

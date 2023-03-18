@@ -157,7 +157,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  width: 8vw;
+  width: 8.5vw;
   background: rgba(167, 239, 244, 0.876);
   border-radius: 20px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
@@ -167,8 +167,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 65vh;
-  width: 15vw;
+  height: 80vh;
+  width: 9vw;
 }
 
 #scroll-up {
@@ -210,7 +210,7 @@ body {
 }
 
 .item {
-  height: 12vh;
+  height: 14vh;
   width: auto;
 }
 .item:hover {
