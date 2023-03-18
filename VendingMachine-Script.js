@@ -2,6 +2,7 @@
 
 
 // gets buttons to output their value to textbox
+
 document.addEventListener('DOMContentLoaded', function() {
    let textbox = document.querySelector("#textInput");
    let buttons = document.querySelectorAll(".btn");
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
  // item description on hover toggle
- 
+
  $("#item1").hover(function(){
    $("#des1").show();
  }, function(){
@@ -85,6 +86,7 @@ function scrollDown()
 
 
 // reloads screen
+
 $('#delete').click(function() {
    location.reload(true);
 });
