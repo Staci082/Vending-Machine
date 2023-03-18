@@ -1,10 +1,12 @@
 /* downloaded font */
+
 @font-face {
   font-family: "digital-7";
   src: url(./font/digital-7.ttf);
 }
 
 /* sass elements */
+
 @mixin scrollBtn {
   position: absolute;
   cursor: pointer;
@@ -56,8 +58,6 @@ body {
   background-size: 100%;
 }
 
-
-/* left side (text bubble + buttons) */
 #leftContainer {
   grid-column: 1/3;
   display: flex;
@@ -67,6 +67,9 @@ body {
   height: 95vh;
   width: 40vw;
 }
+
+/* text bubble */
+
 #bubble {
   width: 40vw;
   height: 60vh;
@@ -93,7 +96,6 @@ body {
     opacity: 1;
   }
 }
-
 #descriptionContainer {
   text-align: center;
   position: absolute;
@@ -119,6 +121,9 @@ body {
   display: none;
   font-size: 6vh;
 }
+
+/* buttons */
+
 #btnContainer {
 @include flex;
   align-items: center;
@@ -172,7 +177,7 @@ body {
 .btn:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  transform: translateY(-2px);
+  transform: translateY(-5px);
 }
 
 .btn:active {
@@ -182,6 +187,7 @@ body {
 
 
 /* menu */
+
 #menuContainer {
   position: relative;
   display: flex;
@@ -224,11 +230,12 @@ body {
 }
 
 /* vending machine */
+
 #machine {
   display: grid;
   grid-column: 4/6;
   height: 90vh;
-  width: auto;
+  width: 35vw;
   margin-top: 1vh;
   margin-right: 2vw;
 }
