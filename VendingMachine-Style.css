@@ -22,6 +22,7 @@ body {
   grid-column: 1/3;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   justify-content: space-around;
   align-items: center;
   height: 95vh;
@@ -37,31 +38,29 @@ body {
   height: 60vh;
 }
 
-#top-textContainer {
+.text,
+p {
+  font-family: "digital-7";
+  font-size: 7vh;
+  font-weight: bold;
+  color: rgb(93, 89, 89);
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+#textContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   align-items: center;
-  height: 20vh;
+  height: 30vh;
   width: 34vw;
-  top: 9vh;
+  top: 11vh;
   left: 7vw;
 }
 
-#bottom-textContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  align-items: center;
-  height: 10vh;
-  width: 34vw;
-  top: 30vh;
-  left: 7vw;
-}
-
-#makeChoice:after {
+#textBox:after {
   content: "..";
   display: inline-block;
   animation: blink 1s infinite;
@@ -75,11 +74,19 @@ body {
     opacity: 1;
   }
 }
-#chosenItem {
+#textInput {
+  font-family: "digital-7";
+  font-size: 7vh;
+  font-weight: bold;
+  color: rgb(93, 89, 89);
   text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   height: 5vh;
-  width: 30vw;
-  margin-top: -10vh;
+  width: 5vw;
+  border: none;
+  outline: none;
 }
 
 #descriptionContainer {
@@ -87,31 +94,8 @@ body {
   position: absolute;
   height: 10vh;
   width: 34vw;
-  top: 40vh;
-  left: 7vw;
-}
-
-#textInput {
-  font-family: "digital-7";
-  font-size: 7vh;
-  font-weight: bold;
-  color: rgb(93, 89, 89);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  height: 5vh;
-  width: 5vw;
-  border: none;
-  text-align: center;
-  outline: none;
-}
-
-.text, p {
-  font-family: "digital-7";
-  font-size: 7vh;
-  font-weight: bold;
-  color: rgb(93, 89, 89);
-  margin: 30px 0px 30px 0px;
+  top: 38vh;
+  left: 8vw;
 }
 
 .description {
