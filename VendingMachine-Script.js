@@ -1,3 +1,6 @@
+const submit = document.getElementById("check");
+
+
 // gets buttons to output their value to text container
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -13,35 +16,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // puts value's into specified strings
 
-function getValue() {
+ function getValue(event) {
   let input = document.getElementsByTagName("input")[0];
-  let textbox = document.getElementById("#makeChoice");
- // let textbox = document.querySelector("#makeChoice");
+  const output = document.getElementById("chosenItem");
 
+  event.preventDefault()
+  $("#textInput").hide();
   switch (true) {
     case input.value === "B1":
-      textbox.innerText = "lime soda";
-     // textbox.textContent = "lime soda";
-     // $("#makeChoice").html("lime soda");
+     output.innerHTML="You have selected:  " + " <br /> " + "lime soda &nbsp; $ 1.5";
       break;
     case input.value === "B2":
-      alert("pineapple soda");
+      output.innerHTML="You have selected:  " + " <br /> " + "pineapple soda &nbsp; $ 1.5";
       break;
     case input.value === "B3":
-      alert("cola drink");
+      output.innerHTML="You have selected:  " + " <br /> " + "cola drink &nbsp; $ 1.5";
       break;
     case input.value === "B4":
-      alert("energy drink");
+      output.innerHTML="You have selected:  " + " <br /> " + "energy drink &nbsp; $ 2";
       break;
     case input.value === "B5":
-      alert("jungle drink");
+      output.innerHTML="You have selected:  " + " <br /> " + "jungle drink &nbsp; $ 2";
       break;
 
     default:
-      alert("out of stock");
+      output = "out of stock";
       break;
   }
+  $("#makeChoice").hide();
 }
+
 
 // item description on hover toggle
 

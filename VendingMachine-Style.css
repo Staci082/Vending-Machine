@@ -30,19 +30,34 @@ body {
 
 /* text bubble */
 #bubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 40vw;
   height: 60vh;
 }
 
-#textContainer {
+#top-textContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   align-items: center;
-  height: 30vh;
+  height: 20vh;
   width: 34vw;
-  top: 10vh;
+  top: 9vh;
+  left: 7vw;
+}
+
+#bottom-textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  height: 10vh;
+  width: 34vw;
+  top: 30vh;
   left: 7vw;
 }
 
@@ -60,12 +75,19 @@ body {
     opacity: 1;
   }
 }
+#chosenItem {
+  text-align: center;
+  height: 5vh;
+  width: 30vw;
+  margin-top: -10vh;
+}
+
 #descriptionContainer {
   text-align: center;
   position: absolute;
   height: 10vh;
   width: 34vw;
-  top: 38vh;
+  top: 40vh;
   left: 7vw;
 }
 
