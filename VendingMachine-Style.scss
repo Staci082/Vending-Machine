@@ -207,28 +207,8 @@ p {
   height: 80vh;
   width: 9vw;
 }
-
-#scroll-up {
-  @include scrollBtn;
-  margin-bottom: 74vh;
-  background-image: url("./images/up.png");
-  &:hover {
-    transform: translateY(-2px);
-  }
-}
-#scroll-down {
-  @include scrollBtn;
-  margin-top: 73vh;
-  background-image: url("./images/down.png");
-  &:hover {
-    transform: translateY(2px);
-  }
-}
 .item {
   @include items;
-}
-#des1 {
-  display: none;
 }
 
 /* vending machine */

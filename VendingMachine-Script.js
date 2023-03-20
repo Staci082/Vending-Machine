@@ -92,16 +92,6 @@ $("#item5").hover(
   }
 );
 
-/* function scrollUp()
-{
-   menuCont.scrollBy(0,20);
-}
-
-function scrollDown()
-{
-   menuCont.scrollBy(0,-20);
-}
-*/
 
 // reloads screen
 
