@@ -1,10 +1,18 @@
 const submit = document.getElementById("check");
 
+
+
+function revFunction() {
+  document.getElementById("rnum").disabled = false;
+}
+
+
 // gets buttons to output their value to text container
 
 document.addEventListener("DOMContentLoaded", function () {
   let textbox = document.querySelector("#textInput");
   let buttons = document.querySelectorAll(".btn");
+  const maxLength = 2;
 
   buttons.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
