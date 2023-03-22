@@ -1,25 +1,31 @@
 const submit = document.getElementById("check");
-
-
-
-function revFunction() {
-  document.getElementById("rnum").disabled = false;
-}
-
+// const numbers = document.querySelector(".number");
+// const letters = document.querySelector(".letter");
 
 // gets buttons to output their value to text container
 
 document.addEventListener("DOMContentLoaded", function () {
   let textbox = document.querySelector("#textInput");
   let buttons = document.querySelectorAll(".btn");
-  const maxLength = 2;
 
   buttons.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
+    btn.addEventListener("click", function () {
       textbox.value += this.value;
     });
   });
 });
+
+
+// enables number buttons after letter button is clicked
+
+function enabler() {
+  var x = document.getElementsByClassName("number");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].disabled = false;
+  }
+}
+
 
 // puts value's into specified strings
 
@@ -31,24 +37,19 @@ function getValue(event) {
   $("#textInput").hide();
   switch (true) {
     case input.value === "B1":
-      output.innerHTML =
-        "You have selected:  " + "<br/>" + "<br/>" + "lime soda &nbsp; $ 1.5";
+      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "lime soda &nbsp; $ 1.5";
       break;
     case input.value === "B2":
-      output.innerHTML =
-        "You have selected:  " + "<br/>" + "<br/>" + "pineapple soda &nbsp; $ 1.5";
+      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "pineapple soda &nbsp; $ 1.5";
       break;
     case input.value === "B3":
-      output.innerHTML =
-        "You have selected:  " + "<br/>" + "<br/>" + "cola drink &nbsp; $ 1.5";
+      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "cola drink &nbsp; $ 1.5";
       break;
     case input.value === "B4":
-      output.innerHTML =
-        "You have selected:  " + "<br/>" + "<br/>" + "energy drink &nbsp; $ 2";
+      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "energy drink &nbsp; $ 2";
       break;
     case input.value === "B5":
-      output.innerHTML =
-        "You have selected:  " + "<br/>" + "<br/>" + "jungle drink &nbsp; $ 2";
+      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "jungle drink &nbsp; $ 2";
       break;
 
     default:
@@ -99,7 +100,6 @@ $("#item5").hover(
     $("#des5").hide();
   }
 );
-
 
 // reloads screen
 
