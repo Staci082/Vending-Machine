@@ -1,6 +1,33 @@
 const submit = document.getElementById("check");
-// const numbers = document.querySelector(".number");
-// const letters = document.querySelector(".letter");
+const text = document.querySelector("#textBox");
+
+const drinks = [{
+    name: "lime soda",
+    price: 1.5,
+    code: "B1"
+  },
+  {
+    name: "pineapple soda",
+    price: 1.5,
+    code: "B2"
+  },
+  {
+    name: "cola drink",
+    price: 1.5,
+    code: "B3"
+  },
+  {
+    name: "energy drink",
+    price: 2.0,
+    code: "B4"
+  },
+  {
+    name: "jungle drink",
+    price: 2.0,
+    code: "B5"
+  },
+]
+
 
 // gets buttons to output their value to text container
 
@@ -25,38 +52,29 @@ function enabler() {
     x[i].disabled = false;
   }
 }
-
+  
 
 // puts value's into specified strings
 
-function getValue(event) {
+  function getValue(event) {
   let input = document.getElementsByTagName("input")[0];
   const output = document.getElementById("textBox");
 
   event.preventDefault();
   $("#textInput").hide();
-  switch (true) {
-    case input.value === "B1":
-      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "lime soda &nbsp; $ 1.5";
-      break;
-    case input.value === "B2":
-      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "pineapple soda &nbsp; $ 1.5";
-      break;
-    case input.value === "B3":
-      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "cola drink &nbsp; $ 1.5";
-      break;
-    case input.value === "B4":
-      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "energy drink &nbsp; $ 2";
-      break;
-    case input.value === "B5":
-      output.innerHTML = "You have selected:  " + "<br/>" + "<br/>" + "jungle drink &nbsp; $ 2";
-      break;
 
-    default:
-      output.innerHTML = "out of stock";
-      break;
-  }
+  let match = (drinks.find(element => (element.code === input.value)))
+
+
+  if (input.value === match.code); `${(match.name)}`;
+
+  output.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
 }
+// else {
+//   output.innerHTML = "Out of stock" ;
+
+
+
 
 // item description on hover toggle
 
