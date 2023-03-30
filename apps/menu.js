@@ -1,19 +1,16 @@
-/*
 
-const menuContainer = document.getElementById('menuContainer');
 
-menuItems.forEach(item => {
-  const menuItem = document.createElement('div');
-  menuItem.classList.add('item');
-
-  const img = document.createElement('img');
-  img.src = options.[drinks.img];
-
-  menuItem.appendChild(img);
-  menuContainer.appendChild(menuItem);
+/* const items = options.map((image) => {
+    const container = document.getElementById("itemContainer");
+    return `<img src="${image.url}" alt="${image.name}" />`;      
 });
 
-*/
+// add the image divs to the container
+const imageContainer = document.getElementById("itemContainer");
+imageContainer.innerHTML = items.join("hello");  */
+
+
+
 
 // WORKING DON'T THROW AWAY
 
@@ -24,8 +21,6 @@ menuItems.forEach(item => {
     itemContainer.style.transform = `translateY(calc(${itemContainer.style.transform || '0px'} - 110px))`;
   });
 */
-
-
 
 
 // item description on hover toggle

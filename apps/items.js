@@ -9,7 +9,7 @@ const options = {
     name: "lime soda",
     price: 1.5,
     code: "B1",
-    img: "./images/lime.png",
+    url: "./images/lime.png",
     description: "lime soda &nbsp; € 1.5 &nbsp; B 1",
   },
   {
@@ -17,7 +17,7 @@ const options = {
     name: "pineapple soda",
     price: 1.5,
     code: "B2",
-    img: "./images/pineapple.png",
+    url: "./images/pineapple.png",
     description: "pineapple soda &nbsp; € 1.5 &nbsp; B 2",
   },
   {
@@ -25,7 +25,7 @@ const options = {
     name: "cola drink",
     price: 1.5,
     code: "B3",
-    img: "./images/cola.png",
+    url: "./images/cola.png",
     description: "cola drink &nbsp; € 1.5 &nbsp; B 3",
   },
   {
@@ -33,7 +33,7 @@ const options = {
     name: "energy drink",
     price: 2.0,
     code: "B4",
-    img: "./images/energy.png",
+    url: "./images/energy.png",
     description: "energy drink &nbsp; € 2.0 &nbsp; B 4",
   },
   {
@@ -41,7 +41,7 @@ const options = {
     name: "jungle drink",
     price: 2.0,
     code: "B5",
-    img: "./images/jungle.png",
+    url: "./images/jungle.png",
     description: "jungle drink &nbsp; € 2.0 &nbsp; B 5",
   },
   {
@@ -49,7 +49,7 @@ const options = {
     name: "mystery drink",
     price: 2.0,
     code: "E2",
-    img: "./images/mystery.png",
+    url: "./images/mystery.png",
     description: "mystery drink &nbsp; € 2.0 &nbsp; E 2",
   },
 ],
@@ -59,7 +59,7 @@ const options = {
     name: "candy bar",
     price: 1.5,
     code: "C1",
-    img: "./images/redbar.png",
+    url: "./images/redbar.png",
     description: "candy bar &nbsp; € 1.5 &nbsp; C 1",
   },
   {
@@ -67,7 +67,7 @@ const options = {
   name: "nutty bar",
   price: 1.5,
   code: "C2",
-  img: "./images/yellowbar.png",
+  url: "./images/yellowbar.png",
   description: "nutty bar &nbsp; € 1.5 &nbsp; C 2",
   },
   {
@@ -75,7 +75,7 @@ const options = {
     name: "fruity bar",
     price: 1.5,
     code: "C3",
-    img: "./images/pinkbar.png",
+    url: "./images/pinkbar.png",
     description: "fruity bar &nbsp; € 1.5 &nbsp; C 3",
   },
   {
@@ -83,7 +83,7 @@ const options = {
   name: "chocolate bar",
   price: 1.5,
   code: "C4",
-  img: "./images/brownbar.png",
+  url: "./images/brownbar.png",
   description: "chocolate bar &nbsp; € 1.5 &nbsp; C 4",
   },
 ],
@@ -93,7 +93,7 @@ chips: [
     name: "salt chips",
     price: 2.0,
     code: "A1",
-    img: "./images/redchips.png",
+    url: "./images/redchips.png",
     description: "salt chips &nbsp; € 2.0 &nbsp; A 1",
   },
   {
@@ -101,7 +101,7 @@ chips: [
   name: "tortilla chips",
   price: 2.0,
   code: "A2",
-  img: "./images/yellowchips.png",
+  url: "./images/yellowchips.png",
   description: "tortilla chips &nbsp; € 2.0 &nbsp; A 2",
   },
   {
@@ -109,7 +109,7 @@ chips: [
     name: "paprika chips",
     price: 2.0,
     code: "A3",
-    img: "./images/greenchips.png",
+    url: "./images/greenchips.png",
     description: "paprika chips &nbsp; € 2.0 &nbsp; A 3",
   },
   {
@@ -117,7 +117,7 @@ chips: [
   name: "cheesy chips",
   price: 2.0,
   code: "A4",
-  img: "./images/pinkchips.png",
+  url: "./images/pinkchips.png",
   description: "cheesy chips &nbsp; € 2.0 &nbsp; A 4",
   },
 ]}
