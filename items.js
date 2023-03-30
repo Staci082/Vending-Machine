@@ -3,7 +3,9 @@
 
 // snacks
 
-const drinks = [{
+const options = {
+drinks: [
+  {
     name: "lime soda",
     price: 1.5,
     code: "B1",
@@ -37,5 +39,68 @@ const drinks = [{
     code: "B5",
     img: "./images/jungle.png",
     description: "jungle drink &nbsp; $ 2.0 &nbsp; B 5",
+  }
+],
+
+chocolates: [
+  {
+    name: ,
+    price: ,
+    code: ,
+    img,
+    description: ,
   },
-]
+  {
+  name: ,
+  price: ,
+  code: ,
+  img,
+  description: ,
+  },
+  {
+    name: ,
+    price: ,
+    code: ,
+    img,
+    description: ,
+  },
+  {
+  name: ,
+  price: ,
+  code: ,
+  img,
+  description: ,
+  },
+],
+
+chips: [
+  {
+    name: ,
+    price: ,
+    code: ,
+    img,
+    description: ,
+  },
+  {
+  name: ,
+  price: ,
+  code: ,
+  img,
+  description: ,
+  },
+  {
+    name: ,
+    price: ,
+    code: ,
+    img,
+    description: ,
+  },
+  {
+  name: ,
+  price: ,
+  code: ,
+  img,
+  description: ,
+  },
+],
+}
