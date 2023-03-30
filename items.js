@@ -5,6 +5,7 @@
 
 const options = {
  drinks: [{
+    id: 1,
     name: "lime soda",
     price: 1.5,
     code: "B1",
@@ -12,6 +13,7 @@ const options = {
     description: "lime soda &nbsp; $ 1.5 &nbsp; B 1",
   },
   {
+    id: 2,
     name: "pineapple soda",
     price: 1.5,
     code: "B2",
@@ -19,6 +21,7 @@ const options = {
     description: "pineapple soda &nbsp; $ 1.5 &nbsp; B 2",
   },
   {
+    id: 3,
     name: "cola drink",
     price: 1.5,
     code: "B3",
@@ -26,6 +29,7 @@ const options = {
     description: "cola drink &nbsp; $ 1.5 &nbsp; B 3",
   },
   {
+    id: 4,
     name: "energy drink",
     price: 2.0,
     code: "B4",
@@ -33,6 +37,7 @@ const options = {
     description: "energy drink &nbsp; $ 2.0 &nbsp; B 4",
   },
   {
+    id: 5,
     name: "jungle drink",
     price: 2.0,
     code: "B5",
@@ -40,6 +45,7 @@ const options = {
     description: "jungle drink &nbsp; $ 2.0 &nbsp; B 5",
   },
   {
+    id: 6,
     name: "mystery drink",
     price: 2.0,
     code: "E2",
@@ -49,6 +55,7 @@ const options = {
 ],
  chocolates: [
   {
+    id: 7,
     name: "candy bar",
     price: 1.5,
     code: "C1",
@@ -56,6 +63,7 @@ const options = {
     description: "candy bar &nbsp; $ 1.5 &nbsp; C 1",
   },
   {
+    id: 8,
   name: "nutty bar",
   price: 1.5,
   code: "C2",
@@ -63,6 +71,7 @@ const options = {
   description: "nutty bar &nbsp; $ 1.5 &nbsp; C 2",
   },
   {
+    id: 9,
     name: "fruity bar",
     price: 1.5,
     code: "C3",
@@ -70,6 +79,7 @@ const options = {
     description: "fruity bar &nbsp; $ 1.5 &nbsp; C 3",
   },
   {
+    id: 10,
   name: "chocolate bar",
   price: 1.5,
   code: "C4",
@@ -79,6 +89,7 @@ const options = {
 ],
 chips: [
   {
+    id: 11,
     name: "salt chips",
     price: 2.0,
     code: "A1",
@@ -86,6 +97,7 @@ chips: [
     description: "salt chips &nbsp; $ 2.0 &nbsp; A 1",
   },
   {
+    id: 12,
   name: "tortilla chips",
   price: 2.0,
   code: "A2",
@@ -93,6 +105,7 @@ chips: [
   description: "tortilla chips &nbsp; $ 2.0 &nbsp; A 2",
   },
   {
+    id: 13,
     name: "paprika chips",
     price: 2.0,
     code: "A3",
@@ -100,6 +113,7 @@ chips: [
     description: "paprika chips &nbsp; $ 2.0 &nbsp; A 3",
   },
   {
+    id: 14,
   name: "cheesy chips",
   price: 2.0,
   code: "A4",

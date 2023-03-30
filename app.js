@@ -27,10 +27,8 @@ window.onload = ()=>{ // html event
 }
 
 
-// variables
 
-const submit = document.getElementById("check");
-const text = document.querySelector("#textBox");
+
 
 // gets buttons to output their value to text container
 
@@ -61,23 +59,25 @@ function enabler() {
 
   function getValue(event) {
   let input = document.getElementsByTagName("input")[0];
+  const text = document.querySelector("#textBox");
+  const orderImg = document.getElementById("orderImg");
 
   event.preventDefault();
   $("#textInput").hide();
 
   let match = (options.drinks.find(element => (element.code === input.value))) 
-  || (options.chips.find(element => (element.code === input.value)))
   || (options.chocolates.find(element => (element.code === input.value)))
+  || (options.chips.find(element => (element.code === input.value)))
 
 
-  if (input.value === match.code); `${(match.name)}`;
+
+  if (input.value === match.code) {
 
   text.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
-  
-}
-// else {
-//   output.innerHTML = "Out of stock" ;
-
+  orderImg.src = `${(match.img)}`;
+  } else if (input.value != match.code){
+ text.innerHTML = "Out of stock";
+}}
 
 
 

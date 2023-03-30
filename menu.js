@@ -11,7 +11,7 @@ container.appendChild(menu);
   const lowerText = document.querySelector("#descriptionBox");
   const menu = document.querySelector("#itemContainer");
 
-  let match = (drinks.find(element => (element.code === input.value)))
+   lowerText.src = `${(match.description)}`
 
 })
 
