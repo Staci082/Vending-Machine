@@ -5,21 +5,25 @@ let items = document.querySelectorAll(options.drinks.img);
 
 container.appendChild(menu);
 
-*/
 
-/* menu.addeventListener('hover', () => {
+
+const items = document.querySelectorAll(".item");
+
+items.addeventListener('mouseover', mouseOver);
+ 
+function mouseOver(){
   const lowerText = document.querySelector("#descriptionBox");
-  const menu = document.querySelector("#itemContainer");
 
-   lowerText.src = `${(match.description)}`
+  let match = (options.drinks.find(element.description)) 
+  lowerText.src = `${(match.description)}`
 
-})
+}  
 
 
   if (input.value === match.code); `${(match.name)}`;
 
   text.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
-*/ 
+*/
 
 // item description on hover toggle
 

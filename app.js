@@ -62,6 +62,9 @@ function enabler() {
   const text = document.querySelector("#textBox");
   const orderImg = document.getElementById("orderImg");
 
+  orderImg.style.height = "40%";
+  
+
   event.preventDefault();
   $("#textInput").hide();
 
@@ -75,10 +78,9 @@ function enabler() {
 
   text.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
   orderImg.src = `${(match.img)}`;
-  } else if (input.value != match.code){
- text.innerHTML = "Out of stock";
-}}
-
+  } /* else {
+  text.innerHTML = "Out of stock";
+} */ }
 
 
 // reloads text
