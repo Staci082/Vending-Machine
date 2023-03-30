@@ -4,8 +4,7 @@
 // snacks
 
 const options = {
-drinks: [
-  {
+ drinks: [{
     name: "lime soda",
     price: 1.5,
     code: "B1",
@@ -39,68 +38,73 @@ drinks: [
     code: "B5",
     img: "./images/jungle.png",
     description: "jungle drink &nbsp; $ 2.0 &nbsp; B 5",
-  }
-],
-
-chocolates: [
-  {
-    name: ,
-    price: ,
-    code: ,
-    img,
-    description: ,
   },
   {
-  name: ,
-  price: ,
-  code: ,
-  img,
-  description: ,
-  },
-  {
-    name: ,
-    price: ,
-    code: ,
-    img,
-    description: ,
-  },
-  {
-  name: ,
-  price: ,
-  code: ,
-  img,
-  description: ,
+    name: "mystery drink",
+    price: 2.0,
+    code: "E2",
+    img: "./images/mystery.png",
+    description: "mystery drink &nbsp; $ 2.0 &nbsp; E 2",
   },
 ],
-
+ chocolates: [
+  {
+    name: "candy bar",
+    price: 1.5,
+    code: "C1",
+    img: "./images/redbar.png",
+    description: "candy bar &nbsp; $ 1.5 &nbsp; C 1",
+  },
+  {
+  name: "nutty bar",
+  price: 1.5,
+  code: "C2",
+  img: "./images/yellowbar.png",
+  description: "nutty bar &nbsp; $ 1.5 &nbsp; C 2",
+  },
+  {
+    name: "fruity bar",
+    price: 1.5,
+    code: "C3",
+    img: "./images/pinkbar.png",
+    description: "fruity bar &nbsp; $ 1.5 &nbsp; C 3",
+  },
+  {
+  name: "chocolate bar",
+  price: 1.5,
+  code: "C4",
+  img: "./images/brownbar.png",
+  description: "chocolate bar &nbsp; $ 1.5 &nbsp; C 4",
+  },
+],
 chips: [
   {
-    name: ,
-    price: ,
-    code: ,
-    img,
-    description: ,
+    name: "salt chips",
+    price: 2.0,
+    code: "A1",
+    img: "./images/redchips.png",
+    description: "salt chips &nbsp; $ 2.0 &nbsp; A 1",
   },
   {
-  name: ,
-  price: ,
-  code: ,
-  img,
-  description: ,
+  name: "tortilla chips",
+  price: 2.0,
+  code: "A2",
+  img: "./images/yellowchips.png",
+  description: "tortilla chips &nbsp; $ 2.0 &nbsp; A 2",
   },
   {
-    name: ,
-    price: ,
-    code: ,
-    img,
-    description: ,
+    name: "paprika chips",
+    price: 2.0,
+    code: "A3",
+    img: "./images/greenchips.png",
+    description: "paprika chips &nbsp; $ 2.0 &nbsp; A 3",
   },
   {
-  name: ,
-  price: ,
-  code: ,
-  img,
-  description: ,
+  name: "cheesy chips",
+  price: 2.0,
+  code: "A4",
+  img: "./images/pinkchips.png",
+  description: "cheesy chips &nbsp; $ 2.0 &nbsp; A 4",
   },
-],
-}
+]}
+ 

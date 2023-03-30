@@ -15,7 +15,7 @@ async function IncludeJavascript(filename){
 }
 
 IncludeJavascript("menu.js") // import  
-IncludeJavascript("variables.js") // import
+IncludeJavascript("items.js") // import
 // IncludeJavascript("textBtns.js") // import
 
 window.onload = ()=>{ // html event
@@ -65,12 +65,15 @@ function enabler() {
   event.preventDefault();
   $("#textInput").hide();
 
-  let match = (drinks.find(element => (element.code === input.value)))
+  let match = (options.drinks.find(element => (element.code === input.value))) 
+  || (options.chips.find(element => (element.code === input.value)))
+  || (options.chocolates.find(element => (element.code === input.value)))
 
 
   if (input.value === match.code); `${(match.name)}`;
 
   text.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
+  
 }
 // else {
 //   output.innerHTML = "Out of stock" ;

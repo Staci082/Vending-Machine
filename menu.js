@@ -1,4 +1,11 @@
 
+/* const container = document.querySelector("#menuContainer");
+const menu  = document.createElement("div");
+let items = document.querySelectorAll(options.drinks.img);
+
+container.appendChild(menu);
+
+*/
 
 /* menu.addeventListener('hover', () => {
   const lowerText = document.querySelector("#descriptionBox");
@@ -56,3 +63,5 @@ $("#item1").hover(
       $("#des5").hide();
     }
   );
+
+
