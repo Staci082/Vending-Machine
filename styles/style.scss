@@ -197,6 +197,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   height: 80vh;
   width: 8.5vw;
   background: rgba(167, 239, 244, 0.876);
@@ -204,10 +205,12 @@ p {
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
-#itemContainer {
+#menuWrapper {
   @include flex;
+  position: absolute;
   height: 80vh;
   width: 9vw;
+  transition: transform 0.5s ease-in-out;
 }
 .item {
   @include items;

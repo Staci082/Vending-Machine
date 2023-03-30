@@ -1,29 +1,38 @@
+/*
 
-/* const container = document.querySelector("#menuContainer");
-const menu  = document.createElement("div");
-let items = document.querySelectorAll(options.drinks.img);
-
-container.appendChild(menu);
+const menuWrapper = document.querySelector('#menuWrapper');
+const menuItems = options.drinks["img"];
 
 
+menuItems.forEach(item => {
 
-const items = document.querySelectorAll(".item");
-
-items.addeventListener('mouseover', mouseOver);
- 
-function mouseOver(){
-  const lowerText = document.querySelector("#descriptionBox");
-
-  let match = (options.drinks.find(element.description)) 
-  lowerText.src = `${(match.description)}`
-
-}  
+  const menuItem = document.createElement('div');
+    menuItem.classList.add('item');
+    const image = document.createElement('img');
+    image.src = `${(options..img)}`
+    menuItem.appendChild(image);
+    menuWrapper.appendChild(menuItem);
+});
 
 
-  if (input.value === match.code); `${(match.name)}`;
 
-  text.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
+  const upButton = document.createElement('img');
+  const downButton = document.createElement('img');
+  upButton.classList.add('menuBtns');
+  downButton.classList.add('menuBtns');
 */
+
+
+  // WORKING DON'T THROW AWAY
+
+ /*  upButton.addEventListener('click', () => {
+    menuWrapper.style.transform = `translateY(calc(${menuWrapper.style.transform || '0px'} + 110px))`;
+  });
+  downButton.addEventListener('click', () => {
+    menuWrapper.style.transform = `translateY(calc(${menuWrapper.style.transform || '0px'} - 110px))`;
+  });
+*/ 
+
 
 // item description on hover toggle
 
