@@ -1,5 +1,23 @@
 
 
+menu.addeventListener('hover', () => {
+  const lowerText = document.querySelector("#descriptionBox");
+  const menu = document.querySelector("#itemContainer");
+
+  
+})
+
+function getValue(event) {
+  let input = document.getElementsByTagName("input")[0];
+
+  let match = (drinks.find(element => (element.code === input.value)))
+
+
+  if (input.value === match.code); `${(match.name)}`;
+
+  text.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
+}
+
 // item description on hover toggle
 
 $("#item1").hover(

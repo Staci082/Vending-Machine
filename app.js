@@ -14,9 +14,9 @@ async function IncludeJavascript(filename){
   })
 }
 
-IncludeJavascript("menu.js") // import µ
-IncludeJavascript("textBtns.js") // import 
+IncludeJavascript("menu.js") // import  
 IncludeJavascript("variables.js") // import
+// IncludeJavascript("textBtns.js") // import
 
 window.onload = ()=>{ // html event
     
@@ -27,6 +27,10 @@ window.onload = ()=>{ // html event
 }
 
 
+// variables
+
+const submit = document.getElementById("check");
+const text = document.querySelector("#textBox");
 
 // gets buttons to output their value to text container
 
