@@ -77,7 +77,7 @@ function enabler() {
 
   if (input.value === match.code) {
 
-  text.innerHTML = `You have selected: <br/> ${(match.name) + ":"}  <br/>     ${(match.price) + " euro"}`;
+  text.innerHTML = `You have selected: <br/> <br/> ${(match.name) + ":"}  <br/>     ${(match.price) + " euro"}`;
   orderImg.src = `${(match.img)}`;
   $("#descriptionBox").hide();
 
