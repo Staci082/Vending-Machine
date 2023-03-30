@@ -77,7 +77,7 @@ body {
 .text,
 p {
   @include font;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 60px 0px;
 }
 #textContainer {
   @include flex;

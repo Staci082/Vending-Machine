@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     text.innerHTML = `You have selected: <br/> ${(match.name) + " :"}  <br/>     ${(match.price) + " euro"}`;
     orderImg.src = `${(match.img)}`;
+
+    
     } /* else {
     text.innerHTML = "Out of stock";
   } */ }
