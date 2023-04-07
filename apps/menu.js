@@ -22,6 +22,20 @@ imageContainer.innerHTML = items.join("hello");  */
   });
 */
 
+/* 
+function addItems(menuItem) {
+  const menu = document.querySelector('#menuContainer');
+  const column = document.createElement('div');
+  menu.append(column)
+}
+
+menuItem.drinks.forEach((url) => {
+  menuItem.setAttribute('data-url', drinks.url);
+})
+
+options.forEach((menuItem) => addItems(menuItem));
+*/
+
 
 // item description on hover toggle
 
