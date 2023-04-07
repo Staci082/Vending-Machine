@@ -16,15 +16,8 @@ async function IncludeJavascript(filename){
 
 IncludeJavascript("./apps/menu.js") // import  
 IncludeJavascript("./apps/items.js") // import
-// IncludeJavascript("./apps/textBtns.js") // import
+IncludeJavascript("./apps/text.js") // import
 
-window.onload = ()=>{ // html event
-    
-  console.log(message)
-  console.log(GetName('John Doe'))
-  console.log(menu)
-
-}
 
 
 
@@ -81,9 +74,7 @@ function enabler() {
   orderImg.src = `${(match.url)}`;
   $("#descriptionBox").hide();
 
-  } /* else {
-  text.innerHTML = "Out of stock";
-} */ }
+  } }
 
 
 // reloads text
