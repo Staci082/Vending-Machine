@@ -54,15 +54,6 @@
         </div>
     </div>
 
-    <div id="payContainer">
-        <div class="payContent">
-            <span class="close">&times;</span>
-            <p>test</p>
-            <button class="confirmButton">&check;</button>
-            <button class="resetButton">&#x21bb;</button>
-        </div>
-    </div>
-
 <!--menu slider-->
         <div id="menuContainer">
             <div id="itemContainer"></div>
@@ -136,6 +127,30 @@
 
 <!--vending machine-->
         <image id="machine" src="./images/machine.png" alt="vending machine"></image>      
+
+        <div id="payContainer">
+            <div class="payContent text">
+
+                <span class="close">&times;</span>
+                <p class="payItem"></p>
+                <p class="enterCoins text" type="text">please enter coins.</p>
+
+            <div id="coinContainer">
+                <button id="" class="coinButton btn"></button>
+                <button id="" class="coinButton btn"></button>
+                <button id="" class="coinButton btn"></button>
+                <button id="" class="coinButton btn"></button>
+                <button id="" class="coinButton btn"></button>
+                <button id="" class="coinButton btn"></button>
+            </div>
+
+            <p class="payText">total:</p>
+            <p class="payText">return:</p>
+
+                <button id="confirmButton" class="submitBtn btn">&check;</button>
+                <button id="resetButton" class="submitBtn btn">&#x21bb;</button>
+            </div>
+        </div>
      
 <script src="./apps/app.js"></script>
 <script src="./apps/text.js"></script>

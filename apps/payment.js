@@ -1,6 +1,7 @@
 const payButton = document.querySelector(".payButton");
-const payContent = document.querySelector(".payContent");
+let payContent = document.querySelector(".payContent");
 const closeButton = document.querySelector(".close");
+const reset = document.querySelector("#resetButton")
 
 // payment button
 
@@ -21,3 +22,12 @@ window.onclick = function (event) {
     payContainer.style.display = "none";
   }
 };
+
+
+
+
+// STILL HAVE TO TEST
+
+$("#reset").click(function () {
+    location.reload(true);
+  });

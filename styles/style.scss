@@ -103,7 +103,8 @@ p {
 
 }
 
-#textBox:after {
+#textBox:after,
+.enterCoins:after {
   content: "..";
   display: inline-block;
   animation: blink 1s infinite;
@@ -157,10 +158,12 @@ p {
   height: auto;
   margin-top: -2vh;
 }
-#check {
+#check,
+#confirmButton {
   background: rgb(143, 231, 143);
 }
-#delete {
+#delete,
+#resetButton {
   background: rgb(244, 126, 126);
 }
 .btn,
@@ -216,13 +219,15 @@ p {
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4);
+  margin-top: -5vh;
 }
 .payContent {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%
+  width: 60%;
+  height: auto;
 }
 
 .close {
@@ -273,3 +278,5 @@ p {
   width: 35vw;
   margin-top: 1vh;
 }
+
+
