@@ -33,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {  // on load
       textbox.value += this.value;
     });
   });
-
-
 });
 
 
@@ -49,14 +47,16 @@ function enabler() {
 }
   
 
+const payButton = document.querySelector(".payButton");
+const payContent = document.querySelector(".payContent");
+
+
 // puts value's into specified strings
 
   function getValue(event) {
   let input = document.getElementsByTagName("input")[0];
   const text = document.querySelector("#textBox");
   const orderImg = document.getElementById("orderImg");
-  const buttonContainer = document.getElementById("btnContainer");
-  const payContainer = document.getElementById("payContainer");
 
   orderImg.style.height = "40%";
   text.style.margin = "70px 0 20px 0";
@@ -64,6 +64,7 @@ function enabler() {
   
   event.preventDefault();
   $("#textInput").hide();
+  $("#descriptionBox").hide();
 
 
   let match = (options.drinks.find(element => (element.code === input.value))) 
@@ -75,20 +76,20 @@ function enabler() {
 
   text.innerHTML = `You have selected: <br/> <br/> ${(match.name) + ":"}  <br/>     ${(match.price) + " euro"}`;
   orderImg.src = `${(match.src)}`;
-  $("#descriptionBox").hide();
 
   payButton.style.display = "block";
-  }
+  } /* else {
+    text.innerHTML = `Please enter valid combination`;
+  } */
   };
 
 
   // payment button
 
-const payButton = document.querySelector(".payButton");
+  payButton.addEventListener ("click", function() {
+    payContainer.style.display = "block";
+  });
 
-payButton.addEventListener ("click", function() {
-  payContainer.style.display = "block";
-})
 
 
 // closes payment pop up
