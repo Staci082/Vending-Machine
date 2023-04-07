@@ -85,7 +85,7 @@ body {
   @include flex;
   width: 40vw;
   height: 65vh;
-  margin-bottom: -4vh;
+  margin-top: -2vh;
 }
 .text,
 p {
@@ -96,10 +96,11 @@ p {
   position: absolute;
   align-items: center;
   height: 30vh;
-  width: 34vw;
+  width: 39vw;
   top: 11vh;
   left: 7vw;
-  margin-top: 20px;
+  margin-top: 1vh;
+
 }
 
 #textBox:after {

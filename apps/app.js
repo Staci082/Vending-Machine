@@ -78,18 +78,14 @@ function enabler() {
   $("#descriptionBox").hide();
 
   payButton.style.display = "block";
-
-  // payment button & pop up
-
- // const payButton = document.createElement("button");
- // payButton.classList.add("payButton");
- //  buttonContainer.appendChild(payButton);
- // payButton.innerHTML = "PAY";
-  
   }
   };
 
+
+  // payment button
+
 const payButton = document.querySelector(".payButton");
+
 payButton.addEventListener ("click", function() {
   payContainer.style.display = "block";
 })
@@ -98,6 +94,7 @@ payButton.addEventListener ("click", function() {
 // closes payment pop up
 
 const closeButton = document.querySelector(".close");
+
 closeButton.onclick = function() {
   payContainer.style.display = "none";
 }
