@@ -22,7 +22,6 @@ IncludeJavascript("./apps/text.js") // import
 
 
 
-
 // gets buttons to output their value to text container
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -75,6 +74,8 @@ function enabler() {
   $("#descriptionBox").hide();
 
   } }
+
+
 
 
 // reloads text
