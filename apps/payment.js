@@ -1,5 +1,6 @@
 const payButton = document.querySelector(".payButton");
 let payContent = document.querySelector(".payContent");
+let payText = document.querySelector(".payText");
 const closeButton = document.querySelector(".close");
 const reset = document.querySelector("#resetButton")
 
@@ -7,6 +8,8 @@ const reset = document.querySelector("#resetButton")
 
 payButton.addEventListener("click", function () {
   payContainer.style.display = "block";
+
+  payText.innerHTML = "Total: ${} <br/> Left: ${} <br/> Return: ${} ";
 });
 
 // closes payment pop up
