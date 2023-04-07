@@ -16,19 +16,12 @@ async function IncludeJavascript(filename){
 
 IncludeJavascript("./apps/menu.js") // import  
 IncludeJavascript("./apps/items.js") // import
-// IncludeJavascript("./apps/textBtns.js") // import
-
-window.onload = ()=>{ // html event
-    
-  console.log(message)
-  console.log(GetName('John Doe'))
-  console.log(menu)
-
-}
+IncludeJavascript("./apps/text.js") // import
 
 
 
 
+/*
 
 // gets buttons to output their value to text container
 
@@ -81,9 +74,7 @@ function enabler() {
   orderImg.src = `${(match.url)}`;
   $("#descriptionBox").hide();
 
-  } /* else {
-  text.innerHTML = "Out of stock";
-} */ }
+  } 
 
 
 // reloads text
@@ -91,3 +82,4 @@ function enabler() {
 $("#delete").click(function () {
   location.reload(true);
 });
+*/
