@@ -161,7 +161,7 @@ p {
   background: rgb(244, 126, 126);
 }
 .btn,
-.submitBtn, {
+.submitBtn {
   @include font;
   @include button;
   align-items: center;
@@ -202,6 +202,40 @@ p {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+#payContainer {
+  display: none; 
+  position: fixed;
+  z-index: 3;
+  padding-top: 200px;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+.payContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* menu */
 
 #menuContainer {

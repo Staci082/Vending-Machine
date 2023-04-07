@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
       textbox.value += this.value;
     });
   });
+
+
 });
 
 
@@ -53,7 +55,8 @@ function enabler() {
   let input = document.getElementsByTagName("input")[0];
   const text = document.querySelector("#textBox");
   const orderImg = document.getElementById("orderImg");
-  const container = document.getElementById("textContainer");
+  const textContainer = document.getElementById("textContainer");
+  const payContainer = document.getElementById("payContainer");
 
   orderImg.style.height = "40%";
   text.style.margin = "70px 0 20px 0";
@@ -74,17 +77,35 @@ function enabler() {
   orderImg.src = `${(match.src)}`;
   $("#descriptionBox").hide();
 
+
+
+  // payment button & pop up
+
   const payButton = document.createElement("button");
   payButton.classList.add("payButton");
-  container.appendChild(payButton);
+  textContainer.appendChild(payButton);
   payButton.innerHTML = "PAY";
-
   payButton.addEventListener ("click", function() {
-    alert("did something");
-  });
+    payContainer.style.display = "block";
+  })
+  };
+}
 
-  } }
 
+// closes payment pop up
+
+const closeButton = document.querySelector(".close");
+closeButton.onclick = function() {
+  payContainer.style.display = "none";
+}
+
+// when user clicks outside of payment pop up it closes as well
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 
