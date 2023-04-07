@@ -1,4 +1,45 @@
 
+const containerD = document.querySelector(".itemContainer");
+const drinks = [
+  {
+    id: 1,
+    src: "./images/lime.png",
+  },
+  {
+    id: 2,
+    src: "./images/pineapple.png",
+  },
+  {
+    id: 3,
+    src: "./images/cola.png",
+  },
+  {
+    id: 4,
+    src: "./images/energy.png",
+  },
+  {
+    id: 5,
+    src: "./images/jungle.png",
+  },
+  {
+    id: 6,
+    src: "./images/mystery.png",
+  },
+];
+
+drinks.forEach(drink => {
+  const div = document.createElement("div");
+  div.className = "drink";
+
+  const img = document.createElement("img");
+  img.src = drink.src;
+
+
+  div.appendChild(img);
+
+  containerD.appendChild(div);
+});
+
 
 /* const items = options.map((image) => {
     const container = document.getElementById("itemContainer");
