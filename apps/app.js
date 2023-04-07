@@ -53,6 +53,7 @@ function enabler() {
   let input = document.getElementsByTagName("input")[0];
   const text = document.querySelector("#textBox");
   const orderImg = document.getElementById("orderImg");
+  const container = document.getElementById("textContainer");
 
   orderImg.style.height = "40%";
   text.style.margin = "70px 0 20px 0";
@@ -72,6 +73,15 @@ function enabler() {
   text.innerHTML = `You have selected: <br/> <br/> ${(match.name) + ":"}  <br/>     ${(match.price) + " euro"}`;
   orderImg.src = `${(match.src)}`;
   $("#descriptionBox").hide();
+
+  const payButton = document.createElement("button");
+  payButton.classList.add("payButton");
+  container.appendChild(payButton);
+  payButton.innerHTML = "PAY";
+
+  payButton.addEventListener ("click", function() {
+    alert("did something");
+  });
 
   } }
 

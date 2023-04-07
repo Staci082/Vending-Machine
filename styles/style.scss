@@ -36,7 +36,7 @@
 }
 @mixin font {
   font-family: "digital-7";
-  font-size: 7vh;
+  font-size: 6vh;
   font-weight: bold;
   color: rgb(93, 89, 89);
   text-align: center;
@@ -123,6 +123,15 @@ p {
   display: none;
   font-size: 6vh;
 }
+.payButton {
+  @include font;
+  position: absolute;
+  height: 80px;
+  width: 120px;
+  margin-top: 35vh;
+  margin-left: 20vw;
+
+}
 
 /* buttons */
 
@@ -139,7 +148,7 @@ p {
   background: rgb(244, 126, 126);
 }
 .btn,
-.submitBtn {
+.submitBtn, {
   align-items: center;
   justify-content: center;
   appearance: none;
