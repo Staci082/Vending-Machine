@@ -24,7 +24,7 @@ IncludeJavascript("./apps/items.js") // import
 
 // gets buttons to output their value to text container
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {  // on load
   let textbox = document.querySelector("#textInput");
   let buttons = document.querySelectorAll(".btn");
 
@@ -55,7 +55,7 @@ function enabler() {
   let input = document.getElementsByTagName("input")[0];
   const text = document.querySelector("#textBox");
   const orderImg = document.getElementById("orderImg");
-  const textContainer = document.getElementById("textContainer");
+  const buttonContainer = document.getElementById("btnContainer");
   const payContainer = document.getElementById("payContainer");
 
   orderImg.style.height = "40%";
@@ -77,19 +77,22 @@ function enabler() {
   orderImg.src = `${(match.src)}`;
   $("#descriptionBox").hide();
 
-
+  payButton.style.display = "block";
 
   // payment button & pop up
 
-  const payButton = document.createElement("button");
-  payButton.classList.add("payButton");
-  textContainer.appendChild(payButton);
-  payButton.innerHTML = "PAY";
-  payButton.addEventListener ("click", function() {
-    payContainer.style.display = "block";
-  })
+ // const payButton = document.createElement("button");
+ // payButton.classList.add("payButton");
+ //  buttonContainer.appendChild(payButton);
+ // payButton.innerHTML = "PAY";
+  
+  }
   };
-}
+
+const payButton = document.querySelector(".payButton");
+payButton.addEventListener ("click", function() {
+  payContainer.style.display = "block";
+})
 
 
 // closes payment pop up

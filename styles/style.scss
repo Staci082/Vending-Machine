@@ -85,6 +85,7 @@ body {
   @include flex;
   width: 40vw;
   height: 65vh;
+  margin-bottom: -4vh;
 }
 .text,
 p {
@@ -136,14 +137,14 @@ p {
   font-size: 6vh;
 }
 .payButton {
+  display: none; 
   @include font;
   @include button;
-  position: absolute;
-  height: 80px;
-  width: 120px;
-  margin-top: 35vh;
-  margin-left: 28vw;
+  height: 10vh;
+  width: 10.5vw;
   background: rgba(167, 239, 244, 0.876);
+  margin-bottom: 4px;
+  margin-right: 21.5vw;
 }
 
 /* buttons */
@@ -152,7 +153,8 @@ p {
   @include flex;
   align-items: center;
   width: 35vw;
-  height: 20vh;
+  height: auto;
+  margin-top: -2vh;
 }
 #check {
   background: rgb(143, 231, 143);
