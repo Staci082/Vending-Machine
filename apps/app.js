@@ -16,7 +16,7 @@ async function IncludeJavascript(filename){
 
 IncludeJavascript("./apps/menu.js") // import  
 IncludeJavascript("./apps/items.js") // import
-IncludeJavascript("./apps/text.js") // import
+// IncludeJavascript("./apps/text.js") // import
 
 
 
@@ -70,7 +70,7 @@ function enabler() {
   if (input.value === match.code) {
 
   text.innerHTML = `You have selected: <br/> <br/> ${(match.name) + ":"}  <br/>     ${(match.price) + " euro"}`;
-  orderImg.src = `${(match.url)}`;
+  orderImg.src = `${(match.src)}`;
   $("#descriptionBox").hide();
 
   } }
