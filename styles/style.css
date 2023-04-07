@@ -224,6 +224,11 @@ p {
   height: auto;
 }
 
+.coinButton img {
+  height: 8vh;
+  width: auto;
+}
+
 .close {
   color: #aaaaaa;
   float: right;
