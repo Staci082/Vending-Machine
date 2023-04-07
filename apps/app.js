@@ -102,8 +102,8 @@ closeButton.onclick = function() {
 // when user clicks outside of payment pop up it closes as well
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == payContainer) {
+    payContainer.style.display = "none";
   }
 }
 
