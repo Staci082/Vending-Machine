@@ -23,6 +23,46 @@ imageContainer.innerHTML = items.join("hello");  */
 */
 
 
+/*
+function createImageHTML(image) {
+  return `
+    <img src="${image.src}" alt="${image.name}" class="item">
+  `;
+}
+
+function renderCarousel(options) {
+  const carousel = document.querySelector("#itemContainer");
+  const startIndex = currentImageIndex;
+  const endIndex = currentImageIndex + 5;
+  const visibleImages = options.drinks.slice(startIndex, endIndex);
+  const imagesHTML = visibleImages.map(createImageHTML).join("");
+  carousel.innerHTML = imagesHTML;
+}
+
+renderCarousel(options);
+
+let currentImageIndex = 0;
+
+function nextImage() {
+  if (currentImageIndex + 5 < images.length) {
+    currentImageIndex += 1;
+    renderCarousel(options);
+  }
+}
+
+function previousImage() {
+  if (currentImageIndex > 0) {
+    currentImageIndex -= 1;
+    renderCarousel(options);
+  }
+}
+const previousButton = document.querySelector("#previous-button");
+const nextButton = document.querySelector("#next-button");
+
+previousButton.addEventListener("click", previousImage);
+nextButton.addEventListener("click", nextImage);
+*/ 
+
 // item description on hover toggle
 
 $("#item1").hover(
