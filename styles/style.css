@@ -216,7 +216,7 @@ p {
 }
 
 .payContent {
-  background-color: #fefefe;
+  background: linear-gradient(0deg, rgb(245, 214, 164) 50%, rgb(236, 191, 236) 50%);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
