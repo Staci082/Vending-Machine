@@ -28,21 +28,21 @@
         <div id="btnContainer">
             <button class="payButton">PAY</button>
             <div>
-                <input type="button" class="btn letter" id="A" value="A" onclick="enabler()"></input>
-                <input type="button" class="btn letter" id="B" value="B" onclick="enabler()"></input>
-                <input type="button" class="btn letter" id="C" value="C" onclick="enabler()"></input>
-                <input type="button" class="btn letter" id="D" value="D" onclick="enabler()"></input>
-                <input type="button" class="btn letter" id="E" value="E" onclick="enabler()"></input>
-                <input type="submit" class="submitBtn" id="check" value="&check;" onclick="getValue(event)"></input>
+                <input type="button" class="btn letter" value="A" onclick="enabler()"></input>
+                <input type="button" class="btn letter" value="B" onclick="enabler()"></input>
+                <input type="button" class="btn letter" value="C" onclick="enabler()"></input>
+                <input type="button" class="btn letter" value="D" onclick="enabler()"></input>
+                <input type="button" class="btn letter" value="E" onclick="enabler()"></input>
+                <input type="submit" class="check btn" id="check" value="&check;" onclick="getValue(event)"></input>
             </div>
 
             <div>
-                <input type="button" class="btn number" id="1" value="1" disabled></input>
-                <input type="button" class="btn number" id="2" value="2" disabled></input>
-                <input type="button" class="btn number" id="3" value="3" disabled></input>
-                <input type="button" class="btn number" id="4" value="4" disabled></input>
-                <input type="button" class="btn number" id="5" value="5" disabled></input>
-                <input type="button" class="submitBtn" id="delete" value="&#x21bb;"></input>
+                <input type="button" class="btn number" value="1" disabled></input>
+                <input type="button" class="btn number" value="2" disabled></input>
+                <input type="button" class="btn number" value="3" disabled></input>
+                <input type="button" class="btn number" value="4" disabled></input>
+                <input type="button" class="btn number" value="5" disabled></input>
+                <input type="button" class="reset btn" id="delete" value="&#x21bb;"></input>
             </div>
             
         </div>
@@ -83,8 +83,8 @@
 
             <p class="payText"></p>
 
-                <button id="confirmButton" class="submitBtn btn">&check;</button>
-                <button id="resetButton" class="submitBtn btn">&#x21bb;</button>
+                <button type="submit" id="confirmButton" class="check btn">&check;</button>
+                <button id="resetButton" class="reset btn">&#x21bb;</button>
             </div>
         </div>
      

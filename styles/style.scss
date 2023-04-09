@@ -1,18 +1,21 @@
-/* downloaded font */
 
-@font-face {
-  font-family: "digital-7";
-  src: url(./font/digital-7.ttf);
+/* imported files */ 
+
+@import "./colors.scss", "./text.scss", "./buttons.scss", "./payment.scss";
+
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-/* sass elements */
-
-$backgroundColor1:  rgb(236, 191, 236);
-$backgroundColor2:  rgb(245, 214, 164);
-$payButtonColor: rgba(167, 239, 244, 0.876);
-$checkButton: rgb(143, 231, 143);
-$resetButton: rgb(244, 126, 126);
-
+@mixin items {
+  height: 14vh;
+  width: auto;
+  &:hover {
+    transform: scale(150%);
+  }
+}
 @mixin scrollBtn {
   position: absolute;
   cursor: pointer;
@@ -28,37 +31,6 @@ $resetButton: rgb(244, 126, 126);
   }
 }
 
-@mixin flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@mixin items {
-  height: 14vh;
-  width: auto;
-  &:hover {
-    transform: scale(150%);
-  }
-}
-@mixin font {
-  font-family: "digital-7";
-  font-size: 6vh;
-  font-weight: bold;
-  color: rgb(93, 89, 89);
-  text-align: center;
-}
-@mixin button {
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395a;
-  cursor: pointer;
-  transition: box-shadow 0.15s, transform 0.15s;
-  touch-action: manipulation;
-  will-change: box-shadow, transform;
-}
 body {
   user-select: none;
   -webkit-user-select: none;
@@ -85,175 +57,6 @@ body {
   width: 40vw;
 }
 
-/* text bubble */
-
-#bubble {
-  @include flex;
-  width: 40vw;
-  height: 65vh;
-  margin-top: -2vh;
-}
-.text,
-p {
-  @include font;
-}
-#textContainer {
-  @include flex;
-  position: absolute;
-  align-items: center;
-  height: 30vh;
-  width: 39vw;
-  top: 11vh;
-  left: 7vw;
-  margin-top: 1vh;
-
-}
-
-#textBox:after,
-.enterCoins:after {
-  content: "..";
-  display: inline-block;
-  animation: blink 1s infinite;
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-#textInput {
-  @include font;
-  height: 5vh;
-  width: 5vw;
-  border: none;
-  outline: none;
-  background: #ffffff;
-}
-
-#descriptionBox {
-  text-align: center;
-  position: absolute;
-  height: 10vh;
-  width: 34vw;
-  top: 38vh;
-  left: 8vw;
-}
-
-.payButton {
-  display: none; 
-  @include font;
-  @include button;
-  height: 10vh;
-  width: 10.5vw;
-  background: $payButtonColor;
-  margin-bottom: 4px;
-  margin-right: 21.5vw;
-}
-
-/* buttons */
-
-#btnContainer {
-  @include flex;
-  align-items: center;
-  width: 35vw;
-  height: auto;
-  margin-top: -2vh;
-}
-#check,
-#confirmButton {
-  background: $checkButton;
-}
-#delete,
-#resetButton {
-  background: $resetButton;
-}
-.btn,
-.submitBtn {
-  @include font;
-  @include button;
-  align-items: center;
-  justify-content: center;
-  appearance: none;
-  background: #fcfcfd;
-  display: inline-flex;
-  appearance: none;
-  height: 10vh;
-  width: 5vw;
-  line-height: 1;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-decoration: none;
-  white-space: nowrap;
-  margin: 4px 2px 4px 2px;
-}
-
-.btn:focus,
-.payButton:focus,
-.submitBtn:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-}
-
-.btn:hover,
-.payButton:hover,
-.submitBtn:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  transform: translateY(-5px);
-  z-index: 1;
-}
-
-.btn:active,
-.payButton:active,
-.submitBtn:active {
-  box-shadow: #d6d6e7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-#payContainer {
-  display: none; 
-  position: fixed;
-  z-index: 3;
-  padding-top: 200px;
-  width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
-  margin-top: -100px;
-}
-.payContent {
-  background: linear-gradient(
-    0deg,
-    $backgroundColor2 50%,
-    $backgroundColor1 50%
-  );
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  height: auto;
-}
-
-.coinButton img {
-  @include items;
-}
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 /* menu */
 
