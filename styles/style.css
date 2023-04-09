@@ -98,11 +98,6 @@ p {
   left: 8vw;
 }
 
-.description {
-  display: none;
-  font-size: 6vh;
-}
-
 .payButton {
   display: none;
   font-family: "digital-7";

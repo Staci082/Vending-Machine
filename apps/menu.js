@@ -133,9 +133,17 @@ options.drinks.forEach(item => {
   div.appendChild(img);
 
   containerD.appendChild(div);
+
 });
+/* const descriptionBox = querySelector("#descriptionBox");
+  const description = document.createElement("div");
+  
+  descriptionBox.appendChild(description);
+  descriptionBox.innerHTML = item.description; */
 
 
+
+  
 /* const items = options.map((image) => {
     const container = document.getElementById("itemContainer");
     return `<img src="${image.url}" alt="${image.name}" />`;      
