@@ -1,8 +1,6 @@
-
-/* imported files */ 
+/* imported files */
 
 @import "./colors.scss", "./text.scss", "./buttons.scss", "./payment.scss";
-
 
 @mixin flex {
   display: flex;
@@ -57,7 +55,6 @@ body {
   width: 40vw;
 }
 
-
 /* menu */
 
 #menuContainer {
@@ -67,10 +64,10 @@ body {
   align-items: center;
   height: 80vh;
   width: 8.5vw;
-  background: $payButtonColor;
+  background: $menuColor;
   border-radius: 20px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-shadow: $buttonShadow2 0 2px 4px,
+  $buttonShadow3 0 7px 13px -3px, $buttonShadow1 0 -3px 0 inset;
 }
 .itemContainer {
   position: relative;
@@ -92,5 +89,3 @@ body {
   width: 35vw;
   margin-top: 1vh;
 }
-
-
