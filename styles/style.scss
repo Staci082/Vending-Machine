@@ -206,6 +206,7 @@ p {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-5px);
+  z-index: 1;
 }
 
 .btn:active,
@@ -239,10 +240,7 @@ p {
   width: 60%;
   height: auto;
 }
-.coinButton {
-  padding: none;
-  background: $payButtonColor;
-}
+
 .coinButton img {
   @include items;
 }
