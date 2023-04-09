@@ -233,6 +233,10 @@ p {
   width: 60%;
   height: auto;
 }
+.coinButton {
+  padding: none;
+  background: rgba(167, 239, 244, 0.876);
+}
 .coinButton img {
   height: 8vh;
   width: auto;
@@ -271,6 +275,7 @@ p {
   align-items: center;
   height: 80vh;
   width: 9vw;
+  border: blue 2px solid;
 }
 .item {
   @include items;
