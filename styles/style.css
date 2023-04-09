@@ -7,7 +7,7 @@
 /* sass elements */
 body {
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -15,7 +15,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: 98vh;
-  background: linear-gradient(0deg, rgb(236, 191, 236) 50%, rgb(245, 214, 164) 50%);
+  background: linear-gradient(
+    0deg,
+    rgb(236, 191, 236) 50%,
+    rgb(245, 214, 164) 50%
+  );
   background-size: 100%;
 }
 
@@ -108,7 +112,8 @@ p {
   text-align: center;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395a;
   cursor: pointer;
@@ -139,7 +144,7 @@ p {
 }
 
 #delete,
-#resetButton {
+#reset {
   background: rgb(244, 126, 126);
 }
 
@@ -152,7 +157,8 @@ p {
   text-align: center;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395a;
   cursor: pointer;
@@ -162,8 +168,8 @@ p {
   align-items: center;
   justify-content: center;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: #fcfcfd;
   display: inline-flex;
   appearance: none;
@@ -181,13 +187,15 @@ p {
 .btn:focus,
 .payButton:focus,
 .submitBtn:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .btn:hover,
 .payButton:hover,
 .submitBtn:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-5px);
   z-index: 1;
 }
@@ -213,7 +221,11 @@ p {
 }
 
 .payContent {
-  background: linear-gradient(0deg, rgb(245, 214, 164) 50%, rgb(236, 191, 236) 50%);
+  background: linear-gradient(
+    0deg,
+    rgb(245, 214, 164) 50%,
+    rgb(236, 191, 236) 50%
+  );
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -253,7 +265,8 @@ p {
   width: 8.5vw;
   background: rgba(167, 239, 244, 0.876);
   border-radius: 20px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .itemContainer {
@@ -281,4 +294,4 @@ p {
   height: 90vh;
   width: 35vw;
   margin-top: 1vh;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
