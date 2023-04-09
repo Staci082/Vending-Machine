@@ -15,6 +15,5 @@ async function IncludeJavascript(filename){
 }
 
 IncludeJavascript("./apps/menu.js") // import  
-IncludeJavascript("./apps/items.js")
 IncludeJavascript("./apps/payment.js") 
 

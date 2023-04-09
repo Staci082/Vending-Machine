@@ -27,7 +27,44 @@ window.onclick = function (event) {
 };
 
 
-
+const coins = [
+  {
+    id: 15,
+    name: "2euro",
+    value: 2,
+    src: "./images/.png",
+  },
+  {
+    id: 16,
+    name: "1euro",
+    value: 1,
+    src: "./images/.png",
+  },
+  {
+    id: 17,
+    name: "50cent",
+    value: 0.5,
+    src: "./images/.png",
+  },
+  {
+    id: 18,
+    name: "20cent",
+    value: 0.2,
+    src: "./images/.png",
+  },
+  {
+    id: 19,
+    name: "10cent",
+    value: 0.1,
+    src: "./images/.png",
+  },
+  {
+    id: 20,
+    name: "5cent",
+    value: 0.05,
+    src: "./images/.png",
+  }
+];
 
 // STILL HAVE TO TEST
 
