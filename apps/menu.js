@@ -121,6 +121,7 @@ const options = {
   ],
 };
 
+
 options.drinks.forEach(item => {
   const div = document.createElement("div");
   div.className = "item";

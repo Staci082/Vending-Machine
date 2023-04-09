@@ -7,6 +7,12 @@
 
 /* sass elements */
 
+$backgroundColor1:  rgb(236, 191, 236);
+$backgroundColor2:  rgb(245, 214, 164);
+$payButtonColor: rgba(167, 239, 244, 0.876);
+$checkButton: rgb(143, 231, 143);
+$resetButton: rgb(244, 126, 126);
+
 @mixin scrollBtn {
   position: absolute;
   cursor: pointer;
@@ -64,8 +70,8 @@ body {
   height: 98vh;
   background: linear-gradient(
     0deg,
-    rgb(236, 191, 236) 50%,
-    rgb(245, 214, 164) 50%
+    $backgroundColor1 50%,
+    $backgroundColor2 50%
   );
   background-size: 100%;
 }
@@ -144,7 +150,7 @@ p {
   @include button;
   height: 10vh;
   width: 10.5vw;
-  background: rgba(167, 239, 244, 0.876);
+  background: $payButtonColor;
   margin-bottom: 4px;
   margin-right: 21.5vw;
 }
@@ -160,11 +166,11 @@ p {
 }
 #check,
 #confirmButton {
-  background: rgb(143, 231, 143);
+  background: $checkButton;
 }
 #delete,
 #resetButton {
-  background: rgb(244, 126, 126);
+  background: $resetButton;
 }
 .btn,
 .submitBtn {
@@ -224,8 +230,8 @@ p {
 .payContent {
   background: linear-gradient(
     0deg,
-    rgb(245, 214, 164) 50%,
-    rgb(236, 191, 236) 50%
+    $backgroundColor2 50%,
+    $backgroundColor1 50%
   );
   margin: auto;
   padding: 20px;
@@ -235,11 +241,10 @@ p {
 }
 .coinButton {
   padding: none;
-  background: rgba(167, 239, 244, 0.876);
+  background: $payButtonColor;
 }
 .coinButton img {
-  height: 8vh;
-  width: auto;
+  @include items;
 }
 .close {
   color: #aaaaaa;
@@ -264,7 +269,7 @@ p {
   align-items: center;
   height: 80vh;
   width: 8.5vw;
-  background: rgba(167, 239, 244, 0.876);
+  background: $payButtonColor;
   border-radius: 20px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;

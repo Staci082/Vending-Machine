@@ -230,8 +230,11 @@ p {
 }
 
 .coinButton img {
-  height: 8vh;
+  height: 14vh;
   width: auto;
+}
+.coinButton img:hover {
+  transform: scale(150%);
 }
 
 .close {
