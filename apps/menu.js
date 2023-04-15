@@ -1,5 +1,7 @@
 
-const containerD = document.querySelector(".itemContainer");
+const menuContainer = document.querySelector(".itemContainer");
+let upButton = document.querySelector("#up");
+let downButton = document.querySelector("#down");
 const options = {
   drinks: [
     {
@@ -132,26 +134,31 @@ options.drinks.forEach(item => {
 
   div.appendChild(img);
 
-  containerD.appendChild(div);
+  menuContainer.appendChild(div);
 
 });
+
+
+menuContainer.addEventListener("wheel", (evt) => {
+  evt.preventDefault();
+  menuContainer.scrollTop = evt.deltaY;
+});
+
+upButton.addEventListener("click", () => {
+  menuContainer.style.scrollBehavior = "smooth";
+  menuContainer.scrollTop += 900;
+});
+downButton.addEventListener("click", () => {
+  menuContainer.scrollTop -= 900;
+});
+
+
 /* const descriptionBox = querySelector("#descriptionBox");
   const description = document.createElement("div");
   
   descriptionBox.appendChild(description);
   descriptionBox.innerHTML = item.description; */
 
-
-
-  
-/* const items = options.map((image) => {
-    const container = document.getElementById("itemContainer");
-    return `<img src="${image.url}" alt="${image.name}" />`;      
-});
-
-// add the image divs to the container
-const imageContainer = document.getElementById("itemContainer");
-imageContainer.innerHTML = items.join("hello");  */
 
 
 

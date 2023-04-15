@@ -10,6 +10,7 @@ payButton.addEventListener("click", function () {
   payContainer.style.display = "block";
 
   payText.innerHTML = "Total: ${} <br/> Left: ${} <br/> <br/> Return: ${} ";
+  
 });
 
 // closes payment pop up

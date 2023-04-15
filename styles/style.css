@@ -33,6 +33,7 @@ body {
 #menuContainer {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
@@ -48,8 +49,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 12vw;
+  height: 70vh;
+  width: 8vw;
+  overflow: hidden;
 }
 
 .item {
@@ -58,6 +60,11 @@ body {
 }
 .item:hover {
   transform: scale(150%);
+}
+
+.scrollBtn img {
+  width: 5vw;
+  height: auto;
 }
 
 /* text stuff */
@@ -257,7 +264,6 @@ p {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  margin-top: -100px;
 }
 
 .payContent {
@@ -267,6 +273,7 @@ p {
   border: 1px solid #888;
   width: 60%;
   height: auto;
+  margin-top: -10vh;
 }
 
 .coinButton img {
