@@ -1,13 +1,12 @@
-/* imported files */
+/* colors */
 /* downloaded font */
 @font-face {
   font-family: "digital-7";
   src: url(./font/digital-7.ttf);
 }
-/* sass elements */
 body {
   -moz-user-select: none;
-  user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -15,11 +14,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: 98vh;
-  background: linear-gradient(
-    0deg,
-    rgb(236, 191, 236) 50%,
-    rgb(245, 214, 164) 50%
-  );
+  background: linear-gradient(0deg, rgb(243, 193, 222) 50%, rgb(245, 214, 164) 50%);
   background-size: 100%;
 }
 
@@ -34,7 +29,38 @@ body {
   width: 40vw;
 }
 
-/* text bubble */
+/* menu */
+#menuContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 8.5vw;
+  background: rgba(167, 239, 244, 0.876);
+  border-radius: 20px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.itemContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 12vw;
+}
+
+.item {
+  height: 14vh;
+  width: auto;
+}
+.item:hover {
+  transform: scale(150%);
+}
+
+/* text stuff */
 #bubble {
   display: flex;
   flex-direction: column;
@@ -103,30 +129,6 @@ p {
   left: 8vw;
 }
 
-.payButton {
-  display: none;
-  font-family: "digital-7";
-  font-size: 6vh;
-  font-weight: bold;
-  color: rgb(93, 89, 89);
-  text-align: center;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395a;
-  cursor: pointer;
-  transition: box-shadow 0.15s, transform 0.15s;
-  touch-action: manipulation;
-  will-change: box-shadow, transform;
-  height: 10vh;
-  width: 10.5vw;
-  background: rgba(167, 239, 244, 0.876);
-  margin-bottom: 4px;
-  margin-right: 21.5vw;
-}
-
 /* buttons */
 #btnContainer {
   display: flex;
@@ -138,18 +140,8 @@ p {
   margin-top: -2vh;
 }
 
-#check,
-#confirmButton {
-  background: rgb(143, 231, 143);
-}
-
-#delete,
-#reset {
-  background: rgb(244, 126, 126);
-}
-
-.btn,
-.submitBtn {
+.payButton {
+  display: none;
   font-family: "digital-7";
   font-size: 6vh;
   font-weight: bold;
@@ -157,88 +149,18 @@ p {
   text-align: center;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395a;
   cursor: pointer;
   transition: box-shadow 0.15s, transform 0.15s;
   touch-action: manipulation;
   will-change: box-shadow, transform;
-  align-items: center;
-  justify-content: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #fcfcfd;
-  display: inline-flex;
-  appearance: none;
   height: 10vh;
-  width: 5vw;
-  line-height: 1;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-decoration: none;
-  white-space: nowrap;
-  margin: 4px 2px 4px 2px;
-}
-
-.btn:focus,
-.payButton:focus,
-.submitBtn:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-}
-
-.btn:hover,
-.payButton:hover,
-.submitBtn:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  transform: translateY(-5px);
-  z-index: 1;
-}
-
-.btn:active,
-.payButton:active,
-.submitBtn:active {
-  box-shadow: #d6d6e7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-#payContainer {
-  display: none;
-  position: fixed;
-  z-index: 3;
-  padding-top: 200px;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  margin-top: -100px;
-}
-
-.payContent {
-  background: linear-gradient(
-    0deg,
-    rgb(245, 214, 164) 50%,
-    rgb(236, 191, 236) 50%
-  );
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  height: auto;
-}
-
-.coinButton img {
-  height: 14vh;
-  width: auto;
-}
-.coinButton img:hover {
-  transform: scale(150%);
+  width: 10.5vw;
+  background: rgba(167, 239, 244, 0.876);
+  margin-bottom: 4px;
+  margin-right: 21.5vw;
 }
 
 .close {
@@ -255,36 +177,64 @@ p {
   cursor: pointer;
 }
 
-/* menu */
-#menuContainer {
-  position: relative;
-  display: flex;
-  justify-content: center;
+.btn {
+  font-family: "digital-7";
+  font-size: 6vh;
+  font-weight: bold;
+  color: rgb(93, 89, 89);
+  text-align: center;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.15s;
+  touch-action: manipulation;
+  will-change: box-shadow, transform;
   align-items: center;
-  height: 80vh;
-  width: 8.5vw;
-  background: rgba(167, 239, 244, 0.876);
-  border-radius: 20px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  justify-content: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fcfcfd;
+  display: inline-flex;
+  appearance: none;
+  height: 10vh;
+  width: 5vw;
+  line-height: 1;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 4px 2px 4px 2px;
 }
 
-.itemContainer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 12vw;
+.btn:focus,
+.payButton:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
-.item {
-  height: 14vh;
-  width: auto;
+.btn:hover,
+.payButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-5px);
+  z-index: 1;
 }
-.item:hover {
-  transform: scale(150%);
+
+.btn:active,
+.payButton:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.reset {
+  background: rgb(244, 126, 126);
+}
+
+.check {
+  background: rgb(143, 231, 143);
 }
 
 /* vending machine */
@@ -294,4 +244,35 @@ p {
   height: 90vh;
   width: 35vw;
   margin-top: 1vh;
-} /*# sourceMappingURL=style.css.map */
+}
+
+/* payment page */
+#payContainer {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 200px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: -100px;
+}
+
+.payContent {
+  background: linear-gradient(0deg, rgb(245, 214, 164) 50%, rgb(243, 193, 222) 50%);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: auto;
+}
+
+.coinButton img {
+  height: 14vh;
+  width: auto;
+}
+.coinButton img:hover {
+  transform: scale(150%);
+}/*# sourceMappingURL=style.css.map */
