@@ -1,5 +1,6 @@
 
 const itemContainer = document.querySelector(".itemContainer");
+const desContainer = document.querySelector("#descriptonContainer");
 const itemCount = 14;
 let upButton = document.querySelector("#up");
 let downButton = document.querySelector("#down");
