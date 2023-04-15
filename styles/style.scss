@@ -19,7 +19,7 @@ $buttonShadow3: rgba(45, 35, 66, 0.3);
   justify-content: center;
 }
 @mixin items {
-  height: 14vh;
+  height: 15vh;
   width: auto;
   &:hover {
     transform: scale(150%);
@@ -100,7 +100,7 @@ body {
   position: relative;
   @include flex;
   align-items: center;
-  height: 70vh;
+  height: auto;
   width: 8vw;
   overflow: hidden;
 }
@@ -110,6 +110,11 @@ body {
 .scrollBtn img {
   width: 5vw;
   height: auto;
+  opacity: 20%;
+  &:hover {
+    transform: scale(130%);
+    opacity: 50%;
+  }
 }
 
 /* text stuff */

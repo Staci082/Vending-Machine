@@ -1,5 +1,6 @@
 
 const menuContainer = document.querySelector(".itemContainer");
+
 let upButton = document.querySelector("#up");
 let downButton = document.querySelector("#down");
 const options = {
@@ -59,7 +60,7 @@ const options = {
       name: "candy bar",
       price: 1.5,
       code: "C1",
-      src: "./images/redbar.png",
+      src: "./images/redbar2.png",
       description: "candy bar &nbsp; € 1.5 &nbsp; C 1",
     },
     {
@@ -67,7 +68,7 @@ const options = {
       name: "nutty bar",
       price: 1.5,
       code: "C2",
-      src: "./images/yellowbar.png",
+      src: "./images/yellowbar2.png",
       description: "nutty bar &nbsp; € 1.5 &nbsp; C 2",
     },
     {
@@ -75,7 +76,7 @@ const options = {
       name: "fruity bar",
       price: 1.5,
       code: "C3",
-      src: "./images/pinkbar.png",
+      src: "./images/pinkbar2.png",
       description: "fruity bar &nbsp; € 1.5 &nbsp; C 3",
     },
     {
@@ -83,7 +84,7 @@ const options = {
       name: "chocolate bar",
       price: 1.5,
       code: "C4",
-      src: "./images/brownbar.png",
+      src: "./images/brownbar2.png",
       description: "chocolate bar &nbsp; € 1.5 &nbsp; C 4",
     },
   ],
@@ -124,7 +125,9 @@ const options = {
 };
 
 
-options.drinks.forEach(item => {
+// creating the img's
+
+function createMenuImage(item) {
   const div = document.createElement("div");
   div.className = "item";
 
@@ -135,9 +138,25 @@ options.drinks.forEach(item => {
   div.appendChild(img);
 
   menuContainer.appendChild(div);
+};
+
+
+// retrieving img's
+
+options.drinks.forEach(item => {
+  createMenuImage(item)
+});
+options.chocolates.forEach(item => {
+  createMenuImage(item)
+
 
 });
+options.chips.forEach(item => {
+  createMenuImage(item)
+});
 
+
+// scrolling menu
 
 menuContainer.addEventListener("wheel", (evt) => {
   evt.preventDefault();
@@ -146,10 +165,10 @@ menuContainer.addEventListener("wheel", (evt) => {
 
 upButton.addEventListener("click", () => {
   menuContainer.style.scrollBehavior = "smooth";
-  menuContainer.scrollTop += 900;
+  menuContainer.scrollTop -= 900;
 });
 downButton.addEventListener("click", () => {
-  menuContainer.scrollTop -= 900;
+  menuContainer.scrollTop += 900;
 });
 
 
