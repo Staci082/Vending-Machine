@@ -1,8 +1,9 @@
 
-const menuContainer = document.querySelector(".itemContainer");
-
+const itemContainer = document.querySelector(".itemContainer");
+const itemCount = 14;
 let upButton = document.querySelector("#up");
 let downButton = document.querySelector("#down");
+
 const options = {
   drinks: [
     {
@@ -128,16 +129,17 @@ const options = {
 // creating the img's
 
 function createMenuImage(item) {
-  const div = document.createElement("div");
+  let div = document.createElement("div");
   div.className = "item";
 
-  const img = document.createElement("img");
+  let img = document.createElement("img");
   img.src = item.src;
   img.style.height = "14vh";
 
   div.appendChild(img);
 
-  menuContainer.appendChild(div);
+  itemContainer.appendChild(div);
+  
 };
 
 
@@ -147,9 +149,7 @@ options.drinks.forEach(item => {
   createMenuImage(item)
 });
 options.chocolates.forEach(item => {
-  createMenuImage(item)
-
-
+  createMenuImage(item);
 });
 options.chips.forEach(item => {
   createMenuImage(item)
@@ -158,18 +158,22 @@ options.chips.forEach(item => {
 
 // scrolling menu
 
-menuContainer.addEventListener("wheel", (evt) => {
+itemContainer.addEventListener("wheel", (evt) => {
   evt.preventDefault();
-  menuContainer.scrollTop = evt.deltaY;
+  itemContainer.scrollTop = evt.deltaY;
 });
 
 upButton.addEventListener("click", () => {
-  menuContainer.style.scrollBehavior = "smooth";
-  menuContainer.scrollTop -= 900;
+  itemContainer.style.scrollBehavior = "smooth";
+  itemContainer.scrollTop -= 900;
 });
 downButton.addEventListener("click", () => {
-  menuContainer.scrollTop += 900;
+  itemContainer.style.scrollBehavior = "smooth";
+ itemContainer.scrollTop += 900;
 });
+
+
+
 
 
 /* const descriptionBox = querySelector("#descriptionBox");
@@ -194,7 +198,7 @@ downButton.addEventListener("click", () => {
 
 /* 
 function addItems(menuItem) {
-  const menu = document.querySelector('#menuContainer');
+  const menu = document.querySelector('#itemContainer');
   const column = document.createElement('div');
   menu.append(column)
 }
