@@ -140,7 +140,6 @@ function createMenuImage(item) {
   div.appendChild(img);
 
   itemContainer.appendChild(div);
-  
 };
 
 

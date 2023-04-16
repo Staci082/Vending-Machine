@@ -1,31 +1,12 @@
 const payButton = document.querySelector(".payButton");
+let coinButton = document.querySelectorAll(".coinButton");
 let payContent = document.querySelector(".payContent");
-let payText = document.querySelector(".payText");
+let coinsTotal = document.querySelector("#total");
+let coinsLeft = document.querySelector("#left");
+let coinsReturn = document.querySelector("#return");
+
 const closeButton = document.querySelector(".close");
 const reset = document.querySelector("#reset");
-
-// payment button
-
-payButton.addEventListener("click", function () {
-  payContainer.style.display = "block";
-
-  payText.innerHTML = "Total: ${} <br/> Left: ${} <br/> <br/> Return: ${} ";
-  
-});
-
-// closes payment pop up
-
-closeButton.onclick = function () {
-  payContainer.style.display = "none";
-};
-
-// when user clicks outside of payment pop up it closes as well
-
-window.onclick = function (event) {
-  if (event.target == payContainer) {
-    payContainer.style.display = "none";
-  }
-};
 
 const coins = [
   {
@@ -65,6 +46,31 @@ const coins = [
     src: "./images/5cent.png",
   },
 ];
+
+// payment button
+
+payButton.addEventListener("click", function () {
+  payContainer.style.display = "block";
+
+});
+
+coinButton.addEventListener("click", function () {
+});
+
+// closes payment pop up
+
+closeButton.onclick = function () {
+  payContainer.style.display = "none";
+};
+
+// when user clicks outside of payment pop up it closes as well
+
+window.onclick = function (event) {
+  if (event.target == payContainer) {
+    payContainer.style.display = "none";
+  }
+};
+
 
 // STILL HAVE TO TEST
 

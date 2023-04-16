@@ -282,7 +282,11 @@ p {
   border: 1px solid #888;
   width: 60%;
   height: auto;
-  margin-top: -10vh;
+  margin-top: -15vh;
+}
+
+.payText {
+  padding-bottom: -1px;
 }
 
 .coinButton img {

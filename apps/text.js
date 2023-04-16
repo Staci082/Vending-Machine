@@ -36,7 +36,7 @@ function getValue(event) {
 
   event.preventDefault();
   $("#textInput").hide();
-  $("#descriptionBox").hide();
+  // $("#descriptionBox").hide();
 
   let match =
     options.drinks.find((element) => element.code === input.value) ||
