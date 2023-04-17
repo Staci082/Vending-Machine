@@ -54,8 +54,8 @@ payButton.addEventListener("click", function () {
 
 });
 
-coinButton.addEventListener("click", function () {
-});
+ /* coinButton.addEventListener("click", function () {
+});  */
 
 // closes payment pop up
 
