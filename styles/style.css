@@ -167,7 +167,7 @@ p {
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395a;
+  color: rgb(93, 89, 89);
   cursor: pointer;
   transition: box-shadow 0.15s, transform 0.15s;
   touch-action: manipulation;
@@ -203,7 +203,7 @@ p {
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395a;
+  color: rgb(93, 89, 89);
   cursor: pointer;
   transition: box-shadow 0.15s, transform 0.15s;
   touch-action: manipulation;

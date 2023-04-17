@@ -1,17 +1,6 @@
 
-/* colors */ 
+@import './colors.scss';
 
-$backgroundColor1: rgb(243, 193, 222);
-$backgroundColor2: rgb(245, 214, 164);
-
-$menuColor: rgba(167, 239, 244, 0.876);
-
-$checkButton: rgb(143, 231, 143);
-$resetButton: rgb(244, 126, 126);
-
-$buttonShadow1: #d6d6e7;
-$buttonShadow2: rgba(45, 35, 66, 0.4);
-$buttonShadow3: rgba(45, 35, 66, 0.3);
 
 @mixin flex {
   display: flex;
@@ -39,7 +28,7 @@ $buttonShadow3: rgba(45, 35, 66, 0.3);
   font-family: "digital-7";
   font-size: 6vh;
   font-weight: bold;
-  color: rgb(93, 89, 89);
+  color: $textColor;
   text-align: center;
 }
 
@@ -165,7 +154,6 @@ p {
 }
 
 
-
 /* buttons */ 
 
 @mixin button {
@@ -174,7 +162,7 @@ p {
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395a;
+  color: $textColor;
   cursor: pointer;
   transition: box-shadow 0.15s, transform 0.15s;
   touch-action: manipulation;
@@ -258,6 +246,7 @@ p {
 .check {
   background: $checkButton;
 }
+
 /* vending machine */
 
 #machine {
