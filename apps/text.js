@@ -1,6 +1,6 @@
 // gets buttons to output their value to text container
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   // on load
   let textbox = document.querySelector("#textInput");
   let buttons = document.querySelectorAll(".btn");
@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       textbox.value += this.value;
     });
   });
+
 });
 
 // enables number buttons after letter button is clicked

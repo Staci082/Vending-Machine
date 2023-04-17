@@ -1,11 +1,9 @@
 const payButton = document.querySelector(".payButton");
-let coinButton = document.querySelectorAll(".coinButton");
+let coinButtons = document.querySelectorAll(".coinButton");
 let payContent = document.querySelector(".payContent");
 let coinsTotal = document.querySelector("#total");
 let coinsLeft = document.querySelector("#left");
 let coinsReturn = document.querySelector("#return");
-
-
 
 const closeButton = document.querySelector(".close");
 const reset = document.querySelector("#reset");
@@ -51,7 +49,7 @@ const coins = [
 
 // payment button
 
-payButton.addEventListener("click", function () {
+payButton.addEventListener("click", () => {
   payContainer.style.display = "block";
 
 });
@@ -61,32 +59,14 @@ payButton.addEventListener("click", function () {
 
 // closes payment pop up
 
-closeButton.onclick = function () {
+closeButton.onclick = () => {
   payContainer.style.display = "none";
 };
 
 // when user clicks outside of payment pop up it closes as well
 
-window.onclick = function (event) {
+window.onclick = (event) => {
   if (event.target == payContainer) {
     payContainer.style.display = "none";
   }
 };
-
-document.addEventListener("DOMContentLoaded", function () {
-  // on load
-  let textbox = document.querySelector("#textInput");
-  let buttons = document.querySelectorAll(".btn");
-
-  buttons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      textbox.value += this.value;
-    });
-  });
-});
-
-// STILL HAVE TO TEST
-
-$("#reset").click(function () {
-  location.reload(true);
-});
