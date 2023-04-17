@@ -5,6 +5,8 @@ let coinsTotal = document.querySelector("#total");
 let coinsLeft = document.querySelector("#left");
 let coinsReturn = document.querySelector("#return");
 
+
+
 const closeButton = document.querySelector(".close");
 const reset = document.querySelector("#reset");
 
@@ -71,6 +73,17 @@ window.onclick = function (event) {
   }
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  // on load
+  let textbox = document.querySelector("#textInput");
+  let buttons = document.querySelectorAll(".btn");
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      textbox.value += this.value;
+    });
+  });
+});
 
 // STILL HAVE TO TEST
 
