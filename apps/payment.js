@@ -51,11 +51,8 @@ const coins = [
 
 payButton.addEventListener("click", () => {
   payContainer.style.display = "block";
-
 });
 
- /* coinButton.addEventListener("click", function () {
-});  */
 
 // closes payment pop up
 
