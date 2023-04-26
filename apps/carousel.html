@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+/** modal */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.649);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+/* close modal btn */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+}
+/* modal content */
+.modal-content {
+  width: vw;
+}
+/* slider inside the modal */
+.modal-content > .slider {
+  max-width: initial;
+  background-color: transparent;
+}
+.modal-content > .slider > .slide-image {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  min-height: initial;
+  max-height: 500px;
+  height: auto;
+}
+/*  paragraph holding the count and number of the images in the slider */
+.modal-content p {
+  color: #fff;
+}
+/* heading */
+h3 {
+  text-align: center;
+}
+/* slider container */
+.slider {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  margin: 40px auto;
+  max-width: 600px;
+}
+/* image */
+.slide-image {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  max-height: 400px;
+  padding: 10px;
+  margin: 0 auto;
+}
+/* paragraph holding the count and number of the images */
+p {
+  text-align: center;
+}
+/* prev and next btns */
+.btn {
+  position: absolute;
+  top: 50%;
+  font-size: 80%;
+  background-color: rgb(228, 231, 231);
+  border: solid 1px rgb(201, 199, 199);
+  padding: 5px;
+  cursor: pointer;
+}
+/* prev btn */
+.backward {
+  left: 0px;
+}
+/* next btn */
+.forward {
+  right: 0px;
+}
+
+</style>
+</head>
+<body>
+    <div class="modal">
+        <span class="close-modal material-icons-outlined"> close </span>
+      
+        <!-- modal content -->
+        <div class="modal-content">
+          <!--* slider cntr -->
+          <div class="slider">
+            <!-- image -->
+            <img class="slide-image" src="" alt="" />
+            <!-- the count and number of the images -->
+            <p>
+              <span class="slide-image-number"></span> of
+              <span class="total-image-number"></span>
+            </p>
+            <!-- previous btn -->
+            <div class="btn backward">
+              <span class="material-icons-outlined"> chevron_left </span>
+            </div>
+            <!-- next btn -->
+            <div class="btn forward">
+              <span class="material-icons-outlined"> chevron_right </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+const image = document.querySelectorAll(".slide-image");
+const imageNumber = document.querySelectorAll(".slide-image-number");
+const totalImageNumber = document.querySelectorAll(".total-image-number");
+const prevBtn = document.querySelectorAll(".backward");
+const nextBtn = document.querySelectorAll(".forward");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close-modal");
+
+// the image array
+const images = [
+  "./images/lime.png",
+  "./images/pineapple.png",
+  "./images/cola.png",
+  "./images/jungle.png",
+];
+
+/* const options = {
+  drinks: [
+    {
+      src: "./images/lime.png"
+    },
+    {
+      src: "./images/pineapple.png"
+    },
+    {
+      src: "./images/cola.png"
+    },
+    {
+      src: "./images/energy.png",
+    },
+    {
+      src: "./images/jungle.png",
+    },
+    {
+      src: "./images/mystery.png",
+    },
+  ],*/
+
+// the index of the image on page load
+let currentImage = 0;
+
+
+// function to select and change the image details
+function showImage() {
+  image.src = images[currentImage];
+  imageNumber.textContent = currentImage + 1;
+  totalImageNumber.textContent = images.length;
+}
+// the image details that shows when the webpage loads
+window.addEventListener("DOMContentLoaded", showImage);
+
+// the next button function
+nextBtn.addEventListener("click", function () {
+  currentImage++;
+  if (currentImage > images.length - 1) {
+    currentImage = 0;
+  }
+  showImage(currentImage);
+});
+
+// the prev button function
+prevBtn.addEventListener("click", function () {
+  currentImage--;
+  if (currentImage < 0) {
+    currentImage = images.length - 1;
+  }
+  showImage(currentImage);
+});
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+    </script>
+</body>
+</html>

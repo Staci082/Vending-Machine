@@ -204,6 +204,7 @@ p {
   height: auto;
   width: 8vw;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .item {

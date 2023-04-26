@@ -40,9 +40,9 @@ function getValue(event) {
   // $("#descriptionBox").hide();
 
   let match =
-    options.drinks.find((element) => element.code === input.value) ||
-    options.chocolates.find((element) => element.code === input.value) ||
-    options.chips.find((element) => element.code === input.value);
+    options.drinks.find((element) => element.code === input.value)
+    || options.chocolates.find((element) => element.code === input.value)
+    || options.chips.find((element) => element.code === input.value);
 
   if (input.value === match.code) {
     text.innerHTML = `You have selected: <br/> <br/> ${

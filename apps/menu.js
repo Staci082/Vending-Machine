@@ -2,8 +2,15 @@
 const itemContainer = document.querySelector(".itemContainer");
 const desContainer = document.querySelector("#descriptonContainer");
 const itemCount = 14;
+
+
+// buttons 
+
 let upButton = document.querySelector("#up");
 let downButton = document.querySelector("#down");
+
+
+// products
 
 const options = {
   drinks: [
@@ -127,6 +134,8 @@ const options = {
 };
 
 
+
+
 // creating the img's
 
 function createMenuImage(item) {
@@ -145,15 +154,9 @@ function createMenuImage(item) {
 
 // retrieving img's
 
-options.drinks.forEach(item => {
-  createMenuImage(item)
-});
-options.chocolates.forEach(item => {
-  createMenuImage(item);
-});
-options.chips.forEach(item => {
-  createMenuImage(item)
-});
+options.drinks.forEach(item => createMenuImage(item))
+options.chocolates.forEach(item => createMenuImage(item))
+options.chips.forEach(item => createMenuImage(item))
 
 
 // scrolling menu
@@ -163,14 +166,10 @@ itemContainer.addEventListener("wheel", (evt) => {
   itemContainer.scrollTop = evt.deltaY;
 });
 
-upButton.addEventListener("click", () => {
-  itemContainer.style.scrollBehavior = "smooth";
-  itemContainer.scrollTop -= 900;
-});
-downButton.addEventListener("click", () => {
-  itemContainer.style.scrollBehavior = "smooth";
- itemContainer.scrollTop += 900;
-});
+upButton.addEventListener("click", () => itemContainer.scrollTop -= 900)
+
+
+downButton.addEventListener("click", () => itemContainer.scrollTop += 900)
 
 
 
@@ -183,70 +182,3 @@ downButton.addEventListener("click", () => {
   descriptionBox.innerHTML = item.description; */
 
 
-
-
-
-// WORKING DON'T THROW AWAY
-
-/*  upButton.addEventListener('click', () => {
-    itemContainer.style.transform = `translateY(calc(${itemContainer.style.transform || '0px'} + 110px))`;
-  });
-  downButton.addEventListener('click', () => {
-    itemContainer.style.transform = `translateY(calc(${itemContainer.style.transform || '0px'} - 110px))`;
-  });
-*/
-
-/* 
-function addItems(menuItem) {
-  const menu = document.querySelector('#itemContainer');
-  const column = document.createElement('div');
-  menu.append(column)
-}
-
-menuItem.drinks.forEach((url) => {
-  menuItem.setAttribute('data-url', drinks.url);
-})
-
-options.forEach((menuItem) => addItems(menuItem));
-*/
-
-
-/*
-function createImageHTML(image) {
-  return `
-    <img src="${image.src}" alt="${image.name}" class="item">
-  `;
-}
-
-function renderCarousel(options) {
-  const carousel = document.querySelector("#itemContainer");
-  const startIndex = currentImageIndex;
-  const endIndex = currentImageIndex + 5;
-  const visibleImages = options.drinks.slice(startIndex, endIndex);
-  const imagesHTML = visibleImages.map(createImageHTML).join("");
-  carousel.innerHTML = imagesHTML;
-}
-
-renderCarousel(options);
-
-let currentImageIndex = 0;
-
-function nextImage() {
-  if (currentImageIndex + 5 < images.length) {
-    currentImageIndex += 1;
-    renderCarousel(options);
-  }
-}
-
-function previousImage() {
-  if (currentImageIndex > 0) {
-    currentImageIndex -= 1;
-    renderCarousel(options);
-  }
-}
-const previousButton = document.querySelector("#previous-button");
-const nextButton = document.querySelector("#next-button");
-
-previousButton.addEventListener("click", previousImage);
-nextButton.addEventListener("click", nextImage);
-*/ 
