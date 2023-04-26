@@ -5,6 +5,7 @@ let coinsTotal = document.querySelector("#total");
 let coinsLeft = document.querySelector("#left");
 let coinsReturn = document.querySelector("#return");
 
+let startAmount = 0;
 let currentAmount = 0;
 
 const closeButton = document.querySelector(".close");
@@ -20,7 +21,7 @@ payButton.addEventListener("click", () => {
 function addCoinValue(coin) {
     console.log(coin);
     currentAmount += coin;
-    coinsTotal.innerHTML = currentAmount;
+    coinsTotal.innerText = "total: " + currentAmount;
 }
 
 document.querySelector("#coinContainer").addEventListener("click", (e) => {

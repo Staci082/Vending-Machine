@@ -81,15 +81,22 @@
                 <button id="cent50" class="coinButton"><img value=".50" src="./images/50cent.png"></img></button>
                 <button id="cent20" class="coinButton"><img value=".20" src="./images/20cent.png"></img></button>
                 <button id="cent10" class="coinButton"><img value=".10" src="./images/10cent.png"></img></button>
-                <button id="cent5" class="coinButton"><img value=".05" src="./images/5cent.png"></img></button>
+                <button id="cent5" class="coinButton "><img value=".05" src="./images/5cent.png"></img></button>
             </div>
-<br>
-            <span>total:<p class="payText" id="total"></p></span>
-            <span>left: <p class="payText" id="left"></p></span>
-            <span>return: <p class="payText" id="return"></p></span>
 
-                <button type="submit" id="confirmButton" class="check btn">&check;</button>
-                <button id="reset" class="reset btn">&#x21bb;</button>
+
+
+            <div class="payTextContainer">
+                <div class="payTextWrapper">
+                    <p class="payText" id="total">total: </p>
+                    <p class="payText" id="left">left: </p>
+                    <p class="payText" id="return">return: </p>
+                </div>
+
+                <div class="payButtonWrapper">
+                    <button type="submit" id="confirmButton" class="check btn">&check;</button>
+                    <button id="reset" class="reset btn">&#x21bb;</button>
+                </div>
             </div>
         </div>
      

@@ -234,17 +234,17 @@ p {
   display: none;
   position: fixed;
   z-index: 3;
-  padding-top: 200px;
   width: 100%;
-  height: 85%;
+  height: 100%;
+  padding-top: 300px;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .payContent {
   background: linear-gradient(0deg, rgb(245, 214, 164) 50%, rgb(243, 193, 222) 50%);
   margin: auto;
+  margin-top: 5vh;
   padding: 20px;
   border: 1px solid #888;
   width: 60%;
@@ -253,7 +253,19 @@ p {
 }
 
 .payText {
-  padding-bottom: -1px;
+  text-align: start;
+}
+
+.payTextContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+}
+
+.payButtonWrapper {
+  display: flex;
+  align-items: end;
+  gap: 10px;
 }
 
 .coinButton {
@@ -269,9 +281,15 @@ p {
   width: auto;
   cursor: pointer;
   margin-bottom: 15px;
+  height: 120px;
 }
 .coinButton img:hover {
   transform: scale(150%);
+}
+
+#reset, #confirmButton {
+  height: 90px;
+  width: 90px;
 }
 
 body {
