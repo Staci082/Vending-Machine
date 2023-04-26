@@ -23,6 +23,7 @@ function enabler() {
   }
 }
 
+
 // puts value's into specified strings
 
 function getValue(event) {
@@ -52,8 +53,11 @@ function getValue(event) {
 
     payButton.style.display = "block";
     payItem.innerHTML = `${match.name + ":"} &nbsp;&nbsp;  ${match.price + " euro"} `;
+
   }
 }
+
+
 
 // reloads text
 

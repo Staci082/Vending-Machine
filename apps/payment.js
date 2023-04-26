@@ -18,8 +18,16 @@ payButton.addEventListener("click", () => {
     payContainer.style.display = "block";
 });
 
+
+/*
+function addItemCost(price) {
+  coinsLeft.innerText = `Left: ${price}`;
+} */
+
+
+// getting value from coins 
+
 function addCoinValue(coin) {
-    console.log(coin);
     currentAmount += coin;
     coinsTotal.innerText = "total: " + currentAmount;
 }
@@ -28,6 +36,7 @@ document.querySelector("#coinContainer").addEventListener("click", (e) => {
 
     addCoinValue(Number(e.target.getAttribute("value")))
 });
+
 
 // closes payment pop up
 
