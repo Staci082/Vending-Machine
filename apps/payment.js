@@ -25,13 +25,19 @@ function addItemCost(price) {
 } */
 
 
+
+
 // getting value from coins 
 
 function addCoinValue(coin) {
     currentAmount += coin;
-    coinsTotal.innerText = "total: " + currentAmount;
-}
 
+    let roundedAmount = Math.round((currentAmount + Number.EPSILON) * 100) / 100;
+
+   // coinsTotal.concat(currentAmount);
+    coinsTotal.innerText = "total: " + roundedAmount;
+}
+console.log(addCoinValue)
 document.querySelector("#coinContainer").addEventListener("click", (e) => {
 
     addCoinValue(Number(e.target.getAttribute("value")))
