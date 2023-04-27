@@ -11,34 +11,28 @@ let currentAmount = 0;
 const closeButton = document.querySelector(".close");
 const reset = document.querySelector("#reset");
 
-
 // payment button
 payButton.addEventListener("click", () => {
     payContainer.style.display = "block";
 });
 
-
-
-// getting value from coins 
+// getting value from coins
 function addCoinValue(coin) {
     currentAmount += coin;
 
-    let roundedAmount = Math.round((currentAmount + Number.EPSILON) * 100) / 100;
+    let roundedAmount =
+        Math.round((currentAmount + Number.EPSILON) * 100) / 100;
 
-   // coinsTotal.concat(currentAmount);
-    coinsTotal.innerText = "total: "+ roundedAmount;
+    // coinsTotal.concat(roundedAmount);
+    coinsTotal.innerText = "total: " + roundedAmount;
 }
-
 
 // make coin buttons do their thang
 document.querySelector("#coinContainer").addEventListener("click", (e) => {
-
-    addCoinValue(Number(e.target.getAttribute("value")))
+    addCoinValue(Number(e.target.getAttribute("value")));
 });
 
-function coinMath() {
-    
-}
+//function coinMath() {}
 
 // closes payment pop up
 closeButton.onclick = () => {

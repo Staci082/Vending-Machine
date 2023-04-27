@@ -19,11 +19,10 @@ function enabler() {
         x[i].disabled = false;
     }
 }
-function displayPayButton() {
+function displaypayButton() {
     const payButton = document.querySelector(".payButton"); // why not working in global scope?
     payButton.style.display = "block";
 }
-
 
 // puts value's into specified strings
 function getValue(event) {
@@ -53,13 +52,14 @@ function getValue(event) {
         }  <br/>     ${match.price + " euro"}`;
         orderImg.src = `${match.src}`;
 
-        displayPayButton();
+        displaypayButton();
 
         coinsLeft.innerHTML = `left: ${match.price}`;
     }
 }
 
 // reload
+
 const reloadButton = document.querySelector("#delete");
 
 reloadButton.addEventListener("click", () => location.reload());

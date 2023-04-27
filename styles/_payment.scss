@@ -1,24 +1,24 @@
-@use '../styles/colors' as *;
-@use '../styles/mixins' as *;
+@use "../styles/colors" as *;
+@use "../styles/mixins" as *;
 
 /* payment page */
 
 #payContainer {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 3;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     padding-top: 300px;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4);
-  }
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
-  .payContent {
+.payContent {
     background: linear-gradient(
-      0deg,
-      $backgroundColor2 50%,
-      $backgroundColor1 50%
+        0deg,
+        $backgroundColor2 50%,
+        $backgroundColor1 50%
     );
     margin: auto;
     margin-top: 5vh;
@@ -27,37 +27,36 @@
     width: 60%;
     height: auto;
     margin-top: -15vh;
-  }
-  .payText {
-   text-align: start;
-  }
-  .payTextContainer {
+}
+.payText {
+    text-align: start;
+}
+.payTextContainer {
     display: flex;
     justify-content: space-between;
     padding: 2vw;
-  }
-  .payButtonWrapper {
+}
+.payButtonWrapper {
     display: flex;
     align-items: end;
     gap: 10px;
-  }
-  
+}
 
 .coinButton {
     background: none;
-	  border: none;
+    border: none;
     margin: 0 -25px 0 -25px;
     &:active {
-      transform: translateY(4px);
+        transform: translateY(4px);
     }
     img {
-      @include items;
-      height: 120px;
+        @include items;
+        height: 120px;
     }
 }
 
-#reset, #confirmButton {
-  height: 90px;
-  width: 90px;
+#reset,
+#confirmButton {
+    height: 90px;
+    width: 90px;
 }
-    
