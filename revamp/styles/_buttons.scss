@@ -1,0 +1,58 @@
+@use '../styles/index' as *;
+
+
+#btnContainer {
+    border: green 2px solid;
+    width: clamp(300px, 100%, 550px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.btn {
+    @include button;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    background: #fcfcfd;
+    height: 4em;
+    width: 4em;
+    text-decoration: none;
+    margin: 0.2em;
+}
+
+.btn:focus,
+.payButton:focus {
+    box-shadow: $buttonShadow1 0 0 0 1.5px inset, $buttonShadow2 0 2px 4px,
+        $buttonShadow3 0 7px 13px -3px, $buttonShadow1 0 -3px 0 inset;
+}
+
+.btn:hover,
+.payButton:hover {
+    box-shadow: $buttonShadow2 0 4px 8px, $buttonShadow3 0 7px 13px -3px,
+        $buttonShadow1 0 -3px 0 inset;
+    transform: translateY(-5px);
+    z-index: 1;
+}
+
+.btn:active,
+.payButton:active {
+    box-shadow: $buttonShadow1 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.reset {
+    background: $resetButton;
+}
+.check {
+    background: $checkButton;
+}
+
+.payButton {
+    @include button;
+    height: 4em;
+    width: 6em;
+    background: $menuColor;
+}
