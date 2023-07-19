@@ -68,9 +68,7 @@
   will-change: box-shadow, transform;
   align-items: center;
   justify-content: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background: #fcfcfd;
   display: inline-flex;
   appearance: none;
@@ -295,8 +293,7 @@ p {
 }
 
 body {
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

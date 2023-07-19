@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(100deg, rgb(243, 193, 222) 50%, rgb(245, 214, 164) 50%);
+}/*# sourceMappingURL=style.css.map */

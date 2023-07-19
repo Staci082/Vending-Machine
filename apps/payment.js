@@ -32,7 +32,18 @@ document.querySelector("#coinContainer").addEventListener("click", (e) => {
     addCoinValue(Number(e.target.getAttribute("value")));
 });
 
-//function coinMath() {}
+
+
+/* function coinMath() {
+
+    coinsLeft(match.price) - roundedAmount = (update coinsLeft)
+
+    if (roundedAmount >= coinsLeft(match.price)) {
+        add difference to coinsReturn
+    }
+} */
+
+
 
 // closes payment pop up
 closeButton.onclick = () => {

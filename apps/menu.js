@@ -172,6 +172,27 @@ upButton.addEventListener("click", () => itemContainer.scrollTop -= 900)
 downButton.addEventListener("click", () => itemContainer.scrollTop += 900)
 
 
+// getting the js variable for the buttons AFTER creating it above
+// const orderImg = document.querySelectorAll("#orderImg");
+// const textBox = document.querySelectorAll("#textBox");
+// 
+// // function for getting sprite related texts to appear
+// function addMenuItemText(items) {
+//     textBox.innerHTML = `Name: ${items.name} </br></br></br></br></br> Class: ${items.role} </br></br></br></br></br> ${items.description}`;
+// }
+// 
+// // getting buttons to show sprites + text on click
+// item.forEach(() => {
+//     document.addEventListener("hover", (e) => {
+//         e.preventDefault();
+//         if (e.target.className === "item") {
+//             let sprite = options.find((items) => items.id === e.target.id);
+//             orderImg.src = items.src;
+//             addSpriteText(sprite);
+//         }
+//     });
+// });
+
 
 
 
