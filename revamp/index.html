@@ -8,32 +8,24 @@
     <link rel="stylesheet" href="./styles/style.css"></link>
     <title>Vending Machine</title>
 </head>
-<img>
-    <div id="leftContainer">
 
-<!--text bubble-->
-        <div id="bubble"></div>
 
-        <div id="textContainer">
-            <p id="textBox" class="text" type="text">Make your choice.</p>
-            <input id="textInput"></input>
-            <img id="orderImg" src="" alt="" />
+<!--text screen / bubble-->
+        <div id="screen">
+            <div id="textContainer">
+                <p id="textBox" class="text" type="text">Make your choice.</p>
+                <input id="textInput"></input>
+                <img id="orderImg" src="" alt="" />
+            </div>
         </div>
-
-        
-            <!--on hover item description container-->
-        <div id="descriptionBox" src="#"></div>
-    </img>
 
 <!--button container-->
         <div id="btnContainer">
-            <button class="payButton">pay</button>
             <div>
                 <input type="button" class="btn letter" value="A" onclick="enabler()"></input>
                 <input type="button" class="btn letter" value="B" onclick="enabler()"></input>
                 <input type="button" class="btn letter" value="C" onclick="enabler()"></input>
                 <input type="button" class="btn letter" value="D" onclick="enabler()"></input>
-                <input type="button" class="btn letter" value="E" onclick="enabler()"></input>
                 <input type="submit" class="check btn" id="check" value="&check;" onclick="getValue(event)"></input>
             </div>
 
@@ -42,12 +34,17 @@
                 <input type="button" class="btn number" value="2" disabled></input>
                 <input type="button" class="btn number" value="3" disabled></input>
                 <input type="button" class="btn number" value="4" disabled></input>
-                <input type="button" class="btn number" value="5" disabled></input>
                 <input type="button" class="reset btn" id="delete" value="&#x21bb;"></input>
             </div>
-            
         </div>
-    </div>
+        <button class="payButton">pay</button>
+
+
+            <!--on hover item description container-->
+        <div id="descriptionBox" src="#"></div>
+    </img>
+
+
 
 <!--menu slider-->
         <div id="menuContainer">
