@@ -1,3 +1,8 @@
+@use '../styles/index' as *;
+
+
+
+
 /* colors */ 
 
 $backgroundColor1: rgb(243, 193, 222);
@@ -13,18 +18,26 @@ $buttonShadow1: #d6d6e7;
 $buttonShadow2: rgba(45, 35, 66, 0.4);
 $buttonShadow3: rgba(45, 35, 66, 0.3);
 
+/* font */
+@import url("https://allfont.net/allfont.css?fonts=digital-7");
 
+@mixin font {
+    font-family: "digital-7", 'sans-serif';
+    font-size: 3rem;
+    font-weight: bold;
+    color: $textColor;
+    text-align: center;
+}
 
 
 @mixin button {
     border-radius: 4px;
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-    box-sizing: border-box;
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
     color: $textColor;
     cursor: pointer;
     transition: box-shadow 0.15s, transform 0.15s;
     touch-action: manipulation;
     will-change: box-shadow, transform;
-  }
+}
